@@ -1,0 +1,40 @@
+<view class="panel outer-panel">
+  <view class="panel main-panel">
+    <view class="left">
+      <image src="{{currentBook.src}}" data-src="{{currentBook.src}}"></image>
+    </view>
+
+    <view class="right">
+      <navigator url="/pages/cartList/cartList" open-type="navigate" class="uploader-text">
+        <view class="toViewCart" bindtap="toViewCart">我的购物车</view>
+      </navigator>
+      <view class="book-name">{{currentBook.name}}</view>
+      <view class="book-info">作者：{{currentBook.author}}</view>
+      <view class="book-info">价格：{{currentBook.price}}</view>
+      <view class="book-info" wx:if="{{currentBook.addNumber}}">购买数量：{{currentBook.addNumber || 0}}</view>
+
+      <button type="warn" bindtap="addCart" class='opt-btn'>
+          <text>加入购物车</text>
+      </button>
+      
+      <button type="{{collectBtnType}}" bindtap="addCollection" class='opt-btn'>
+          <text>{{collectBtnType === 'primary' ? '已收藏' : '收藏' }}</text>
+      </button>
+    </view>
+  </view>
+
+  <view class="detail-block author-intro">
+    <text>{{currentBook.authorIntro}}</text>
+  </view>
+
+  <view class="detail-block chapterList-block">
+    <view class="bottom-title">章节列表</view>
+    <block wx:for="{{currentBook.chapterList}}"
+           wx:for-item="item"
+           wx:key="{{item.id}}">
+      <view class="title">{{item.title}}</view>
+      <!--<view class="desc">{{item.sketch}}</view>-->
+    </block>
+  </view>
+
+</view>

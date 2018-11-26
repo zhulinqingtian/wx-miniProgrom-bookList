@@ -1,0 +1,25 @@
+<view class="panel outer-panel">
+  <view class="list-block">
+
+    <block
+        wx:for="{{bookList}}"
+        wx-for-item="item"
+        wx:key="{{item.id}}"
+        bindtap="viewDetail"
+    >
+      <view class="list-item">
+        <image
+            src="{{item.src}}"
+            data-src="{{item.src}}"
+            bindtap="viewPreviewImage"
+            class="list-pic">
+        </image>
+
+        <navigator url="/pages/book-detail/book-detail?id={{item.id}}" open-type="navigate" class="uploader-text">
+          <view>{{item.name}}</view>
+        </navigator>
+      </view>
+    </block>
+
+  </view>
+</view>

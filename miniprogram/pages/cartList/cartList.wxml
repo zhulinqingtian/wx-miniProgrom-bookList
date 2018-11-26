@@ -1,0 +1,71 @@
+<view class="panel">
+  <block
+      wx:for="{{cartData}}"
+      wx:for-item="item"
+      wx:key="{{item.id}}"
+      wx:index="index"
+      class="block"
+  >
+
+    <view class='list-item'>
+      <icon 
+        class='check-btn'
+        type='success'
+        data-index="{{item.index}}"
+        data-color='{{colorMap[index]}}'
+        bindtap='addToBuyList' 
+        data-id='{{item.id}}'
+        data-name='{{item.name}}'
+        data-price='{{item.price}}'
+        data-addNumber='{{item.addNumber}}'
+        ></icon>
+
+      <view class="left">
+        <image src="{{item.src}}" class="book-img"></image>
+      </view>
+      <view class="right">
+        <view class="title">{{item.name}}</view>
+        <view class="author">{{item.author}}</view>
+
+        <view class="operate">
+          <view class="price">价格：{{item.price}}</view>
+
+          <!-- 数量 -->
+          <view>
+
+            <view class='label-text'>数量:</view> 
+            <input
+              type="number"
+              class="number"
+              value="{{item.addNumber}}"
+              data-id="{{item.id}}"
+              bindblur="countAmount"
+              adjust-position="true"
+            />
+            <view class='change-block'>
+              <button type="primary" bindtap="addCollection" class='opt-btn' data-id="{{item.id}}">
+                <text>+</text>
+              </button>
+              <button type="warn" bindtap="reduceCollection" class='opt-btn' data-id="{{item.id}}" disabled='{{item.addNumber <= 0}}'>
+                <text>-</text>
+              </button>
+            </view>
+
+            <view class='total-block' wx:if="{{item.addNumber * item.price}}">
+              总价:
+              <text>{{item.addNumber * item.price}}</text>
+            </view>
+          </view>
+  
+        </view>
+
+      </view>
+    </view>
+  </block>
+
+  <view class="statistic-block">
+    <text>
+      共计{{toBuyList.length}}个商品，{{totalAmount}}元
+    </text>
+  </view>
+</view>
