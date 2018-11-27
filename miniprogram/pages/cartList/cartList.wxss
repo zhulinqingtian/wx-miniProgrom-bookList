@@ -64,11 +64,6 @@
 .change-block{
   display: inline-block;
 }
-.statistic-block{
-  width: 100%;
-  height:60px;
-  margin: 10px 10px;
-}
 .operate .opt-btn{
   margin-right: 10px;
   padding: 0px 16px;
@@ -94,6 +89,27 @@
   width: 30px;
   height: 30px;
 }
-.list-item .check-btn.checked{
-  background-color: #3596fc;
+
+.statistic-block{
+  width: 100%;
+  margin: 10px 10px;
+  font-size: 14px;
+}
+.statistic-title text{
+  display: inline-block;
+}
+.settlement{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.bottom-btn{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 10px;
 }

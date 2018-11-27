@@ -1,0 +1,36 @@
+page{
+  min-height: 100%;
+  font-size: 14px;
+}
+page>.panel{
+  padding: 2%;
+}
+.form-block{
+  width: 96%;
+  margin: 0 auto;
+  padding: 2%;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+}
+.form-line{
+  margin-bottom: 5px;
+}
+.form-line .label{
+  width: 30%;
+  display: inline-block
+}
+.form-line input{
+  display: inline-block;
+  vertical-align: middle;
+}
+.picker{
+  display: inline-block
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bottom button{
+  border-radius: 0;
+}

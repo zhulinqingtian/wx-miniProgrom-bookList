@@ -1,23 +1,33 @@
 <view class="panel">
+
+  <view class="statistic-block statistic-title">
+    共计
+    <text class='blue'>{{totalCommodity}}</text>
+    个商品，
+    <text class='blue'>{{totalAmount}}</text>
+    元
+  </view>
   <block
-      wx:for="{{cartData}}"
+      wx:for="{{tempData}}"
       wx:for-item="item"
       wx:key="{{item.id}}"
-      wx:index="index"
+      wx:for-index="index"
       class="block"
   >
 
     <view class='list-item'>
+
       <icon 
         class='check-btn'
         type='success'
-        data-index="{{item.index}}"
-        data-color='{{colorMap[index]}}'
+        color='{{colorArr[index].color}}'
+        data-index="{{index}}"
         bindtap='addToBuyList' 
         data-id='{{item.id}}'
         data-name='{{item.name}}'
         data-price='{{item.price}}'
         data-addNumber='{{item.addNumber}}'
+        data-color='{{colorArr[index].color}}'
         ></icon>
 
       <view class="left">
@@ -41,6 +51,7 @@
               data-id="{{item.id}}"
               bindblur="countAmount"
               adjust-position="true"
+              disabled='true'
             />
             <view class='change-block'>
               <button type="primary" bindtap="addCollection" class='opt-btn' data-id="{{item.id}}">
@@ -63,9 +74,9 @@
     </view>
   </block>
 
-  <view class="statistic-block">
-    <text>
-      共计{{toBuyList.length}}个商品，{{totalAmount}}元
-    </text>
+  <!-- 去结算 -->
+  <view class='settlement'>
+    <button type="primary" size="default" class='bottom-btn'> 全选 </button>
+    <button type="warn" size="default" class='bottom-btn'> 购买 </button>
   </view>
 </view>

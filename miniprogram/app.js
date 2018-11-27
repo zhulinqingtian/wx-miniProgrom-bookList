@@ -1,7 +1,6 @@
 //app.js
 App({
   globalData: {
-    cartData: [], // 购物车列表 {id: '', name: '', price: '', addNumber: ''}
     collectData: [], // 收藏列表 {id: '', name: '', price: '', collected: ''}
     listData: [ // 所有书籍列表
       {
@@ -194,6 +193,66 @@ App({
         price: 79,
         src: '../../images/sanguo.jpg',
         addNumber: 0
+      }
+    ],
+    cartData: [ // 购物车列表 {id: '', name: '', price: '', addNumber: ''}
+      {
+        id: '001',
+        name: '红楼梦',
+        author: '曹雪芹',
+        collected: false, // 是否被收藏
+        price: 65,
+        src: '../../images/HongLou.jpg',
+        addNumber: 0
+      },
+      {
+        id: '002',
+        name: '西游记',
+        author: '吴承恩',
+        collected: false,
+        price: 78,
+        src: '../../images/xiyou.jpg',
+        addNumber: 0
+      },
+      {
+        id: '003',
+        name: '水浒传',
+        author: '施耐庵',
+        collected: false,
+        price: 88,
+        src: '../../images/shuihu.jpg',
+        addNumber: 0
+      },
+      {
+        id: '004',
+        name: '三国演义',
+        author: '罗贯中',
+        collected: false,
+        price: 79,
+        src: '../../images/sanguo.jpg',
+        addNumber: 0
+      }
+    ],
+    addressList: [
+      {
+        id: 1,
+        provice: '陕西省',
+        city: '太原市',
+        area: '小店区',
+        consigneeName: '姜姜',
+        tel: '15735166538',
+        address_details: 'AA学校',
+        isDefault: true
+      },
+      {
+        id: 2,
+        provice: '浙江省',
+        city: '杭州市',
+        area: '余杭区',
+        consigneeName: '云溪',
+        tel: '15735166538',
+        address_details: '西溪联合科技广场',
+        isDefault: false
       }
     ]
   },

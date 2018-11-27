@@ -1,0 +1,67 @@
+<view class='panel'>
+  <!-- 我的地址列表 -->
+    <block wx:for="{{addressListData}}"
+           wx:for-item="item"
+           wx:for-index="{{index}}"
+           wx:key="{{item.id}}"
+    >
+      <view class='address-list' 
+        style="background-color: {{item.isDefault ? '#3596fc' : '#f0f0f0'}}; color: {{item.isDefault ? '#fff' : '#000'}}"  
+        >
+
+        <!-- 使用地址 -->
+        <view class="use-btn">
+          <navigator url="/pages/cartList/cartList?id={{item.id}}" open-type="navigate" class="uploader-text">
+            <view 
+              class='iconfont icon-jiahao'
+              style="color: {{item.isDefault ? '#fff' : '#666'}};" 
+            ></view>
+          </navigator>
+        </view>
+
+        <!-- 设为默认 -->
+        <view class='set-default-one' wx:if="{{!item.isDefault}}">
+          <button 
+            type="default"
+            size="mini"
+            data-id="{{item.id}}"
+            data-isDefault="{{item.isDefault}}"
+            bindtap='selectedAddress'
+            >设为默认</button>
+        </view>
+
+        <!-- 取消默认 -->
+        <view class='set-default-one' wx:if="{{item.isDefault}}">
+          <button 
+            type="default"
+            size="mini"
+            data-id="{{item.id}}"
+            data-isDefault="{{item.isDefault}}"
+            bindtap='selectedAddress'
+            >取消默认</button>
+        </view>
+
+        <!-- 地址信息 -->
+        <view class='info'>
+          <view class='iconfont icon-xingming inline-icon'></view>
+          <text>{{item.consigneeName}}</text>
+        </view>
+        <view class='info'>
+          <view class='iconfont icon-dianhua inline-icon'></view>
+          <text>{{item.tel}}</text>
+        </view>
+        <view class='info'>
+          <view class='iconfont icon-dizhi inline-icon'></view>
+          <text>{{item.provice}} - {{item.city}} - {{item.area}} {{item.address_details}}           </text>
+        </view>
+
+      </view>
+    </block>
+
+  <!-- 添加地址 -->
+  <view class='addBtn'>
+    <navigator url="../addAddress/addAddress" open-type="navigate" class="uploader-text">
+      <view class='iconfont icon-jiahao'></view>
+    </navigator>
+  </view>
+</view>
