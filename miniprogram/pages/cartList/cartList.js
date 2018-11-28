@@ -104,16 +104,19 @@ Page({
   // 计算商品数和总价
   countTotalAmount() {
     var total = 0;
+
+    // 选中列表
     var selectedData = this.data.tempData.filter(function(v) {
       return v.selected;
     });
 
     if (!selectedData.length) {
-      return total = 0;
+      total = 0;
+    } else {
+      selectedData.forEach(function (v) {
+        total = total + (v.price * (v.addNumber || 0));
+      });
     }
-    selectedData.forEach(function(v) {
-      total = total + (v.price * (v.addNumber || 0));
-    });
 
     this.setData({ totalAmount: total, totalCommodity: selectedData.length});
   },
@@ -132,5 +135,29 @@ Page({
     var data = this.data.colorArr;
     data[index].color = color;
     this.setData({ 'colorArr': data });
+  },
+
+  // 清空选中
+  toClear() {
+    var list = this.data.tempData,
+        colorArr = this.data.colorArr;
+
+    list.forEach(function(v) {
+      v.addNumber = 0;
+      v.selected = false;
+    });
+    this.setData({ tempData: list});
+
+    colorArr.forEach(function (v) {
+      v.color = '#666';
+    });
+
+    this.setData({ colorArr: colorArr, totalCommodity: 0, totalAmount: 0});
+  },
+  // 去购买
+  toBuyPage() {
+    wx.navigateTo({
+      url: '../buy/buy',
+    })
   }
 });

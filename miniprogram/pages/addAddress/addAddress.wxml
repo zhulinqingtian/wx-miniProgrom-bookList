@@ -3,38 +3,48 @@
   <view class='form-block'>
     <view class='form-line'>
       <view class='label'>收货人姓名：</view>
-      <input type='text' placeholder='张三' value='{{name}}'></input>
+      <input type='text' placeholder='张三' value='{{currentItem.consigneeName}}' bindblur='setName'></input>
     </view>
 
     <view class='form-line'>
       <view class='label'>联系方式：</view>
-      <input type='text' placeholder='12345678900'  value='{{tel}}'></input>
+      <input type='text' placeholder='12345678900' value='{{currentItem.tel}}' bindblur='setMobile'></input>
     </view>
 
-    <view class='form-line'>
+    <view class='form-line addr-line'>
       <view class='label'>收货地址：</view>
       <picker
         class='picker'
         mode="region"
         bindchange="setAddress"
-        value="{{region}}"
+        value="{{currentItem.region}}"
         custom-item="{{customItem}}"
         >
         <view class="picker">
-          {{region[0]}}，{{region[1]}}，{{region[2]}}
+          {{currentItem.region[0] || currentItem.province}}，{{currentItem.region[1] || currentItem.city}}，{{currentItem.region[2] || currentItem.area}}
         </view>
       </picker>
     </view>
 
     <view class='form-line'>
       <view class='label'>详细地址：</view>
-      <input type='text' placeholder='XX小区xx幢xx楼'></input>
+      <input type='text' placeholder='XX小区xx幢xx楼'  value='{{currentItem.address_details}}' bindblur='setDetailAddress'></input>
+    </view>
+
+    <view class='form-line'>
+      <view class='label'>默认地址：</view>
+      <radio-group class="radio-group" bindchange="defaultChange" value='{{currentItem.isDefault}}'>
+        <label class="radio">
+          <radio value="1" checked='{{currentItem.isDefault ? true : false}}'/>是
+          <radio value="0" checked='{{currentItem.isDefault ? false : true}}'/>否
+        </label>
+      </radio-group>
     </view>
 
   </view>
 
   <view class='bottom'>
-    <button type='primary' size='default' bindtap='addOneItem'>添加</button>
+    <button type='primary' size='default' bindtap='checkOneItem'>{{editId ? '保存' : '添加'}}</button>
   </view>
 
 </view>

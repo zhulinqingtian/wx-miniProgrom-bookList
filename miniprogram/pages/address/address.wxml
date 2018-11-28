@@ -1,4 +1,12 @@
 <view class='panel'>
+
+  <!-- 没有地址 -->
+  <view class='address-list' wx:if="{{!addressListData.length}}">暂无地址，现在
+    <navigator url="/pages/addAddress/addAddress" open-type="navigate" class="uploader-text to-add blue">
+      <view>添加</view>
+    </navigator>
+  </view>
+
   <!-- 我的地址列表 -->
     <block wx:for="{{addressListData}}"
            wx:for-item="item"
@@ -52,7 +60,26 @@
         </view>
         <view class='info'>
           <view class='iconfont icon-dizhi inline-icon'></view>
-          <text>{{item.provice}} - {{item.city}} - {{item.area}} {{item.address_details}}           </text>
+          <text>{{item.province}} - {{item.city}} - {{item.area}} {{item.address_details}} </text>
+        </view>
+
+        <!-- 编辑 & 删除 -->
+        <view class='info opt-line'>
+          <!-- 编辑 -->
+          <icon
+              wx:if="{{manageAddressList}}"
+              class='iconfont icon-iconfontzhizuobiaozhun0264'
+              data-id="{{item.id}}"
+              bindtap='updateItem'
+              ></icon>
+
+          <!-- 删除地址 -->
+          <icon
+              wx:if="{{manageAddressList}}"
+              class='iconfont icon-zhankai'
+              data-id="{{item.id}}"
+              bindtap='delOneItem'
+              ></icon>
         </view>
 
       </view>
@@ -63,5 +90,8 @@
     <navigator url="../addAddress/addAddress" open-type="navigate" class="uploader-text">
       <view class='iconfont icon-jiahao'></view>
     </navigator>
+  </view>
+  <view class='delBtn' bindtap='manageList'>
+    <view class='iconfont icon-jianhao'></view>
   </view>
 </view>

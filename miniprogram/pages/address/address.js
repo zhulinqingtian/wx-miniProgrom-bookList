@@ -2,7 +2,8 @@ var app = getApp();
 
 Page({
   data: {
-    addressListData: []
+    addressListData: [],
+    manageAddressList: false
   },
   onLoad() {
     this.getAddressList();
@@ -46,6 +47,32 @@ Page({
       title: title,
       icon: 'success',
       duration: 1000
+    })
+  },
+  // 管理地址
+  manageList() {
+    var flag = this.data.manageAddressList;
+    this.setData({ manageAddressList: !flag});
+  },
+  // 删除地址
+  delOneItem(e) {
+    var id = e.target.dataset.id;
+    var data = app.globalData.addressList;
+
+    data.forEach(function(v, i) {
+      if (v.id == id) {
+        data.splice(i, 1);
+      }
+    });
+
+    app.globalData.addressList = data;
+    this.setData({ addressListData: data});
+    app.showToast('删除成功');
+  },
+  // 编辑地址
+  updateItem(e) {
+    wx.navigateTo({
+      url: '../addAddress/addAddress?id=' + e.target.dataset.id,
     })
   }
 });

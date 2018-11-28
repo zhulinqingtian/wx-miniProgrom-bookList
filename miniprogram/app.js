@@ -236,17 +236,17 @@ App({
     addressList: [
       {
         id: 1,
-        provice: '陕西省',
+        province: '陕西省',
         city: '太原市',
         area: '小店区',
         consigneeName: '姜姜',
         tel: '15735166538',
         address_details: 'AA学校',
-        isDefault: true
+        isDefault: false
       },
       {
         id: 2,
-        provice: '浙江省',
+        province: '浙江省',
         city: '杭州市',
         area: '余杭区',
         consigneeName: '云溪',
@@ -265,5 +265,33 @@ App({
         traceUser: true,
       })
     }
+  },
+
+  // toast
+  showToast(title) {
+    return wx.showToast({
+      title: title,
+      icon: 'warn',
+      duration: 5000
+    });
+  },
+
+  // 确认框
+  showConfirmModal(title = '', content = '', con_text = '', can_text = '') {
+    wx.showModal({
+      title: title,
+      content: content,
+      success: function (res) {
+        if (res.confirm && con_text) {
+          console.log(con_text);
+        } else {
+          if (can_text) {
+            console.log(can_text);
+          }
+        }
+
+      }
+    });
+    return false;
   }
 });

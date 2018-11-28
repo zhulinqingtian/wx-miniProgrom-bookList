@@ -12,7 +12,11 @@ page>.panel{
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
 }
 .form-line{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.addr-line{
+  line-height: 28px;
 }
 .form-line .label{
   width: 30%;
@@ -22,8 +26,11 @@ page>.panel{
   display: inline-block;
   vertical-align: middle;
 }
+.form-line .radio-group{
+  display: inline-block;
+}
 .picker{
-  display: inline-block
+  display: inline-block;
 }
 .bottom{
   position: fixed;
@@ -33,4 +40,8 @@ page>.panel{
 }
 .bottom button{
   border-radius: 0;
+}
+/* 单选钮样式 */
+.form-line radio {
+  transform:scale(0.8);
 }

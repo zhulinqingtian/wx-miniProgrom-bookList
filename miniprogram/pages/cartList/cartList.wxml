@@ -76,7 +76,7 @@
 
   <!-- 去结算 -->
   <view class='settlement'>
-    <button type="primary" size="default" class='bottom-btn'> 全选 </button>
-    <button type="warn" size="default" class='bottom-btn'> 购买 </button>
+    <button type="primary" size="default" class='bottom-btn' bindtap='toClear'> 清空 </button>
+    <button type="warn" size="default" class='bottom-btn' bindtap='toBuyPage'> 购买 </button>
   </view>
 </view>

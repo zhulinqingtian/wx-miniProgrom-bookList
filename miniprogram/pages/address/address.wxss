@@ -51,19 +51,40 @@ page>.panel{
 .icon-dizhi{
   color: rgb(54, 83, 243);
 }
-.addBtn{
+.addBtn, .delBtn{
   position: absolute;
   bottom: 5px;
-  left: 50%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: orange;
-  margin-left: -20px;
   color: #fff;
   text-align: center;
   line-height: 40px;
 }
 .addBtn .iconfont{
   font-size: 22px;
+}
+.addBtn{
+  left: 3px;
+  background-color: orange;
+}
+.delBtn{
+  left: 46px;
+  background-color: rgb(250, 26, 26);
+}
+.del-one-section{
+  position: absolute;
+  top: -12px;
+  right: -4px;
+}
+.to-add{
+  display: inline-block
+}
+.opt-line .iconfont{
+  padding-right: 4px;
+  line-height: 16px;
+}
+.icon-zhankai{
+  font-size: 28px;
+  vertical-align: bottom;
 }
