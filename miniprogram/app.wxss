@@ -1,3 +1,5 @@
+@import "./public/css/iconfont-base64.wxss";
+
 /**app.wxss**/
 .container {
   display: flex;
@@ -5,6 +7,36 @@
   align-items: center;
   box-sizing: border-box;
 } 
+
+/* 常用颜色 */
 .blue{
   color: #3596fc;
+}
+.red{
+  color: #E64340;
+}
+.white{
+  color: #fff;
+}
+.gray{
+  color: #666;
+}
+.light-gray{
+  color: #999;
+}
+
+/* 常用背景颜色 */
+.bg-red{
+  background-color: #E64340;
+}
+.bg-blue{
+  background-color: #3596fc;
+}
+.bg-white{
+  background-color: #fff;
+}
+
+/* hover-class */
+.red-btn-hover{
+  opacity: 0.2;
 }

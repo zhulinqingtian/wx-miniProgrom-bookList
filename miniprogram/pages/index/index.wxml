@@ -54,9 +54,17 @@
     </navigator>
   </view>
 
+  <!-- 地址管理 -->
   <view class="uploader toPage">
     <navigator url="/pages/address/address" open-type="navigate" class="uploader-text">
       <view>地址管理</view>
+    </navigator>
+  </view>
+
+  <!-- 统计数据 -->
+  <view class="uploader toPage">
+    <navigator url="/pages/statistic/statistic" open-type="navigate" class="uploader-text">
+      <view>统计数据</view>
     </navigator>
   </view>
 </view>

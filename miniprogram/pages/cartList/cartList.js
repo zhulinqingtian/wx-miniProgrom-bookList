@@ -6,7 +6,8 @@ Page({
     totalCommodity: 0,
     cartData: app.globalData.listData,
     colorArr: [], // 保存列表每一项icon的颜色状态
-    tempData: [] // 临时存储  保存所有列表项 selected属性表示选中情况
+    tempData: [], // 临时存储  保存所有列表项 selected属性表示选中情况
+    buyIsDisabled: true
   },
   onLoad() {
     this.createIcon();
@@ -117,7 +118,11 @@ Page({
         total = total + (v.price * (v.addNumber || 0));
       });
     }
-
+    if (selectedData.length && total) { // 有选中商品,且已有数量
+      this.setData({ buyIsDisabled: false});
+    } else { // 未选中商品
+      this.setData({ buyIsDisabled: true });
+    }
     this.setData({ totalAmount: total, totalCommodity: selectedData.length});
   },
   // 创建购买icon

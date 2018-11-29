@@ -1,3 +1,86 @@
 <view class='panel'>
-  <view>{{HarvestAddress}}</view>
+  <!-- 地址信息 -->
+  <view class='consignee-info bg-white section'>
+    <view class='list-item'>
+      <view class='left'>{{HarvestName}}</view>
+      <view class='right'>{{HarvestTel}}</view>
+    </view>
+    <view>{{HarvestAddress}}</view>
+    <button type='warn' size='mini' bindtap='toAddressPage'>修改地址</button>
+  </view>
+  
+
+  <!-- 付款信息 -->
+  <view class='pay-info bg-white section'>
+    <view class='title red'>
+      <view class='iconfont icon-shengdangouwuche'></view>
+      <text>待付款</text>
+    </view>
+    <view class='order-info'>
+      <view class='info'>
+        <label>订单金额</label>
+        <label class='red'>$ <text>1280.00</text></label>
+      </view>
+
+      <view class='info'>
+        <label>+运费</label>
+        <label class='red'>$ <text>5.00</text></label>
+      </view>
+
+      <view class='info'>
+        <label class='right'>
+          实付款：
+          <view class='red'>$ <text>1205.00 </text></view>
+        </label>
+      </view>
+
+      <view class='info order-date'>
+        <text class='right'>订单日期：2018-12-28 09:00:00</text>
+      </view>
+
+      <view class='info toPay'>
+        <button type='warn' size='mini' class='payBtn'>去支付</button>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 商品列表 -->
+  <view class='commodity-info bg-white section'>
+    <view class='title'>商品信息</view>
+
+    <!-- 列表 -->
+    <view class='c-info'>
+      <!-- 左边图片 -->
+      <view class='left'>
+        <image src='../../images/HongLou.jpg'></image>
+      </view>
+      <!-- 右边信息 -->
+      <view class='right'>
+        <view class='c-name'>超级美丽无敌的女神级别古风流苏珍珠的发饰</view>
+        <view class='sub-info'>
+          <text class='p-price red'>$55</text>
+          <text class='number gray'>*10</text>
+          <view class='evaluateBtn red' hover-class='red-btn-hover'>去评价</view>
+        </view>
+      </view>
+    </view>
+
+    <view class='c-info'>
+      <!-- 左边图片 -->
+      <view class='left'>
+        <image src='../../images/HongLou.jpg'></image>
+      </view>
+      <!-- 右边信息 -->
+      <view class='right'>
+        <view class='c-name'>超级美丽无敌的女神级别古风流苏珍珠的发饰</view>
+        <view class='sub-info'>
+          <text class='p-price red'>$55</text>
+          <text class='number gray'>*10</text>
+          <text class='evaluateBtn red'>去评价</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
 </view>

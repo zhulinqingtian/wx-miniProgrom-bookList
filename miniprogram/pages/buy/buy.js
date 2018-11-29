@@ -6,7 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    HarvestAddress: '' // 收获地址，默认显示默认地址，没有默认地址时，显示第一个地址
+    HarvestAddress: '', // 收获地址，默认显示默认地址，没有默认地址时，显示第一个地址
+    HarvestName: '',
+    HarvestTel: ''
   },
 
   /**
@@ -55,7 +57,17 @@ Page({
       item = list[0];
     }
 
-    _this.setData({ HarvestAddress: item.province + '-' + item.city + '-' + item.area + ' ' + item.address_details });
+    _this.setData({ HarvestAddress: item.province + '-' + item.city + '-' + item.area + ' ' + item.address_details, HarvestName: item.consigneeName, HarvestTel: item.tel});
+  },
+
+  /**
+   * 去地址列表页选取地址
+   */
+
+  toAddressPage() {
+    wx.navigateTo({
+      url: '../address/address',
+    })
   },
 
   /**

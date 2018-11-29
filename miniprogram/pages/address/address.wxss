@@ -1,5 +1,3 @@
-@import "../../public/css/iconfont-base64.wxss";
-
 page{
   min-height: 100%;
   position: relative;

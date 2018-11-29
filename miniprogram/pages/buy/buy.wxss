@@ -1,4 +1,117 @@
 page{
+  font-size: 14px;
+  background-color: rgb(245, 243, 243);
+}
+.section{
+  margin: 8px 0;
   padding: 2%;
+  border-top: 1px solid #dddcdc;
+  border-bottom: 1px solid #dddcdc;
+}
+
+.consignee-info{
+  line-height: 24px;
+}
+.list-item{
+    display: flex;
+}
+.list-item .left{
+    width: 100px;
+}
+.list-item .right{
+    flex: 1;
+    text-align: right;
+}
+.list-item .left{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* 支付信息 */
+.order-info{
+  padding-top: 5px;
+}
+.order-info .title{
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 4px;
+}
+.pay-info .title .iconfont, .pay-info .title text{
+  display: inline-block;
+}
+.pay-info .title text{
+  margin-left: 3px;
+}
+.order-info .info{
+  line-height: 26px;
+}
+.order-info .info .red{
+  float: right;
+  font-weight: bold;
+}
+.order-info .info .right{
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+.order-date{
   font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+.toPay{
+  text-align: right;
+  margin-top: 10px;
+  line-height: 14px;
+}
+
+
+
+/* 商品 */
+.commodity-info .title{
+  font-size: 16px;
+  color: #666;
+  line-height: 30px
+}
+.c-info {
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.c-info .left {
+  float: left;
+  width: 120px;
+  height: 100%;
+  overflow: hidden;
+}
+.c-info .right {
+  height: 100%;
+  margin-left: 120px;
+}
+.c-info .left image{
+  width: 100px;
+  height:100px;
+}
+.c-info .right .c-name{
+  font-size: 12px;
+}
+.sub-info{
+  position: absolute;
+  left: 120px;
+  bottom: 10px;
+  right: 0;
+}
+.sub-info text:not(.evaluateBtn){
+  padding: 0 5px;
+}
+.evaluateBtn{
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  border: 1px solid #E64340;
+  border-radius: 3px;
+  padding: 0 10px;
 }
