@@ -1,0 +1,45 @@
+<view class="panel">
+  <!-- rose -->
+  <view class='container'>
+    <ch-canvas canvasId='rose' id='rose'></ch-canvas>
+  </view>
+
+  <!--环形图-->
+  <view class='container'>
+    <ch-canvas canvasId='ring' id='ring'></ch-canvas>
+  </view>
+  
+  <!--柱状图-->
+  <view class='container'>
+    <ch-canvas canvasId='bar' id='bar'></ch-canvas>
+  </view>
+  
+  <!-- 散点图 -->
+  <view class='container'>
+    <ch-canvas canvasId='bubble' id='bubble'></ch-canvas>
+  </view>
+
+  <!-- 折线图 -->
+  <view class='container'>
+    <ch-canvas canvasId='line' id='line'></ch-canvas>
+    <view class='button-group'>
+      <button data-type='0' catchtap='onTypetap'>单线</button>
+      <button data-type='1' catchtap='onTypetap'>多线</button>
+      <button data-type='2' catchtap='onTypetap'>阴影</button>
+      <button data-type='3' catchtap='onTypetap'>折线</button>
+      <button data-type='4' catchtap='onTypetap'>曲线</button>
+    </view>
+  </view>
+
+  <!--饼图-->
+<view class='container'>
+  <button bindtap='createdPie' type='primary'>改变饼图</button>
+  <ch-canvas canvasId='pie-1' id='pie-3'></ch-canvas>
+</view>
+
+<!--雷达图-->
+<view class='container'>
+  <button bindtap='createdRadar' type='primary'>改变雷达图</button>
+  <ch-canvas canvasId='radar' id='radar'></ch-canvas>
+</view>
+</view>

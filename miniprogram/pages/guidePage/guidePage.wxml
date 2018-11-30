@@ -1,0 +1,10 @@
+<view>
+  <view class='center-block'>
+    <image src='../../images/flash-logo.png'></image>
+  </view>
+  <view class='dots-block'>
+    <view class='dot'></view>
+    <view class='dot'></view>
+    <view class='dot'></view>
+  </view>
+</view>

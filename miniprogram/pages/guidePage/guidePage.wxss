@@ -1,0 +1,53 @@
+.center-block{
+  width: 100px;
+  height:100px;
+  margin: 50px auto;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 8px;
+}
+.center-block image{
+  width: 100%;
+  height: 100%;
+}
+.dots-block{
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  height: 10px;
+  text-align: center;
+}
+
+@keyframes scale{
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    background-color: rgb(250, 241, 241);
+    transform: scale(1.5,1.5);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 6px;
+  display: inline-block;
+  animation-name: scale;  /*执行的动画名称*/
+  animation-iteration-count: infinite; /*执行次数*/
+  animation-duration: 1s; /*执行时间*/
+  animation-timing-function: ease; /*执行方式*/
+  transition: all 0.6s ease-in;
+}
+
+.dot:nth-child(2){
+  animation-delay: 0.2s; /*动画延迟时间*/
+}
+.dot:nth-child(3){
+  animation-delay: 0.4s; /*动画延迟时间*/
+}
