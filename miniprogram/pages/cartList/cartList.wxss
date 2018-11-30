@@ -62,7 +62,7 @@
   line-height: 24px;
 }
 .change-block{
-  display: inline-block;
+  float: right;
 }
 .operate .opt-btn{
   margin-right: 10px;
