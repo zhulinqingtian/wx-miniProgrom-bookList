@@ -1,6 +1,6 @@
 Page({
   data: {},
-  onLoad() {
+  onShow() {
     setTimeout(function() {
       wx.navigateTo({
         url: '../index/index',

@@ -22,5 +22,32 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "size": "24px",
+    "selectedColor": "#3596fc",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab/index.png",
+        "selectedIconPath": "images/tab/index-1.png"
+      },
+      {
+        "pagePath": "pages/cartList/cartList",
+        "text": "购物车",
+        "iconPath": "images/tab/cart-1.png",
+        "selectedIconPath": "images/tab/cart.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "书籍",
+        "iconPath": "images/tab/list-1.png",
+        "selectedIconPath": "images/tab/list.png"
+      }
+    ]
   }
 }
