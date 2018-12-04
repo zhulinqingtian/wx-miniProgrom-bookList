@@ -161,8 +161,19 @@ Page({
   },
   // 去购买
   toBuyPage() {
+    var selectedIds = [];
+    // 选中列表
+    var selectedData = this.data.tempData.filter(function (v) {
+      return v.selected;
+    });
+    selectedData.forEach(function(v) {
+      selectedIds.push(v.id);
+    });
+
+    var date = new Date().toLocaleDateString();
+
     wx.navigateTo({
-      url: '../buy/buy',
-    })
+      url: '../buy/buy?totalCommodity=' + this.data.totalCommodity + '&totalAmount=' + this.data.totalAmount + '&ids=' + selectedIds.join(',') + '&date=' + date
+    });
   }
 });

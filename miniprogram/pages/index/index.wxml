@@ -2,7 +2,7 @@
 <view class="container">
 
   <!-- 用户 openid -->
-  <view class="userinfo">
+  <view class="userinfo" style='display:none;'>
     <button 
       open-type="getUserInfo" 
       bindgetuserinfo="onGetUserInfo"
@@ -40,16 +40,27 @@
     </navigator>
   </view>
 
+  <!-- 轮播图 -->
+  <view class='swiper-block'>
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
   <!-- 跳转列表页 -->
   <view class="uploader toPage">
-    <navigator url="/pages/list/list" open-type="navigate" class="uploader-text">
+    <navigator url="/pages/list/list" open-type="switchTab" class="uploader-text">
       <view>书籍列表</view>
     </navigator>
   </view>
 
   <!-- 跳转购物车 -->
   <view class="uploader toPage">
-    <navigator url="/pages/cartList/cartList" open-type="navigate" class="uploader-text">
+    <navigator url="/pages/cartList/cartList" open-type="switchTab" class="uploader-text">
       <view>购物车</view>
     </navigator>
   </view>

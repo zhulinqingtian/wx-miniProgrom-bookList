@@ -5,8 +5,8 @@
     </view>
 
     <view class="right">
-      <navigator url="/pages/cartList/cartList" open-type="navigate" class="uploader-text">
-        <view class="toViewCart" bindtap="toViewCart">我的购物车</view>
+      <navigator url="/pages/cartList/cartList" open-type="switchTab" class="uploader-text">
+        <view class="toViewCart red iconfont icon-shengdangouwuche" bindtap="toViewCart"></view>
       </navigator>
       <view class="book-name">{{currentBook.name}}</view>
       <view class="book-info">作者：{{currentBook.author}}</view>

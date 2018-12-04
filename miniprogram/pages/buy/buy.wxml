@@ -5,8 +5,12 @@
       <view class='left'>{{HarvestName}}</view>
       <view class='right'>{{HarvestTel}}</view>
     </view>
-    <view>{{HarvestAddress}}</view>
-    <button type='warn' size='mini' bindtap='toAddressPage'>修改地址</button>
+    <view>
+      {{HarvestAddress}}
+
+      <!-- 编辑地址 -->
+      <view class='iconfont icon-iconfontzhizuobiaozhun0264' bindtap='toAddressPage'></view>
+    </view>
   </view>
   
 
@@ -19,18 +23,18 @@
     <view class='order-info'>
       <view class='info'>
         <label>订单金额</label>
-        <label class='red'>$ <text>1280.00</text></label>
+        <label class='red'>¥<text>{{totalAmount}}</text></label>
       </view>
 
       <view class='info'>
         <label>+运费</label>
-        <label class='red'>$ <text>5.00</text></label>
+        <label class='red'>¥<text>{{carriage}}</text></label>
       </view>
 
       <view class='info'>
         <label class='right'>
           实付款：
-          <view class='red'>$ <text>1205.00 </text></view>
+          <view class='red'>¥<text>{{realPay}}</text></view>
         </label>
       </view>
 
@@ -39,7 +43,7 @@
       </view>
 
       <view class='info toPay'>
-        <button type='warn' size='mini' class='payBtn'>去支付</button>
+        <button type='warn' size='mini' class='payBtn' bindtap='toPay'>去支付</button>
       </view>
     </view>
 
@@ -50,37 +54,31 @@
     <view class='title'>商品信息</view>
 
     <!-- 列表 -->
-    <view class='c-info'>
-      <!-- 左边图片 -->
-      <view class='left'>
-        <image src='../../images/HongLou.jpg'></image>
-      </view>
-      <!-- 右边信息 -->
-      <view class='right'>
-        <view class='c-name'>超级美丽无敌的女神级别古风流苏珍珠的发饰</view>
-        <view class='sub-info'>
-          <text class='p-price red'>$55</text>
-          <text class='number gray'>*10</text>
-          <view class='evaluateBtn red' hover-class='red-btn-hover'>去评价</view>
+    <block 
+      wx:for="{{buyList}}"
+      wx:for-item="item"
+      wx:key="{{item.id}}"
+      >
+      <view class='c-info'>
+        <!-- 左边图片 -->
+        <view class='left'>
+          <image src='{{item.src}}'></image>
+        </view>
+        <!-- 右边信息 -->
+        <view class='right'>
+          <view class='c-name'>{{item.name || '超级美丽无敌的女神级别古风流苏珍珠的发饰'}}</view>
+          <view class='sub-info'>
+            <text class='p-price red'>¥{{item.price}}</text>
+            <text class='number gray'>*{{item.addNumber || 0}}</text>
+            <view class='viewBtn red'
+              hover-class='red-btn-hover'
+              data-id="{{item.id}}"
+              bindtap='toViewDetail'
+              >查看详情</view>
+          </view>
         </view>
       </view>
-    </view>
-
-    <view class='c-info'>
-      <!-- 左边图片 -->
-      <view class='left'>
-        <image src='../../images/HongLou.jpg'></image>
-      </view>
-      <!-- 右边信息 -->
-      <view class='right'>
-        <view class='c-name'>超级美丽无敌的女神级别古风流苏珍珠的发饰</view>
-        <view class='sub-info'>
-          <text class='p-price red'>$55</text>
-          <text class='number gray'>*10</text>
-          <text class='evaluateBtn red'>去评价</text>
-        </view>
-      </view>
-    </view>
+    </block>
   </view>
-  
+  <input type="number" pattern="\d*"/>
 </view>

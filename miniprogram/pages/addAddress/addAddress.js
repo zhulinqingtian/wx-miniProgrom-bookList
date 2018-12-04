@@ -29,6 +29,7 @@ Page({
       list.forEach(function(v) {
         if (v.id == id) {
           _this.setData({ currentItem: v});
+          _this.setData({ 'currentItem.region': v.province +  '-' + v.city + '-' + v.area});
           console.log(v);
         }
       });
@@ -185,10 +186,8 @@ Page({
 
     addressList.forEach(function(v, i) {
       if (v.id == _this.data.editId) {
-        addressList[i] = item;
+        app.globalData.addressList[i] = item;
       }
     });
-
-    app.globalData.addressList = addressList;
   }
 });

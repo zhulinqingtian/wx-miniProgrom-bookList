@@ -8,28 +8,29 @@ Page({
   data: {
     HarvestAddress: '', // 收获地址，默认显示默认地址，没有默认地址时，显示第一个地址
     HarvestName: '',
-    HarvestTel: ''
+    HarvestTel: '',
+    totalCommodity: 0,
+    totalAmount: 0,
+    selectedIds: '',
+    carriage: 5.00,
+    realPay: 0,
+    buyList: [],
+    listData: app.globalData.listData
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({ 
+      totalCommodity: options.totalCommodity || 0,
+      totalAmount: options.totalAmount || 0,
+      selectedIds: options.ids
+    });
+    this.setData({ realPay: parseFloat(this.data.totalAmount) + parseFloat(this.data.carriage)});
+
     this.getHarvestAddress();
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+    this.getBuyList(options.ids);
   },
 
 
@@ -69,25 +70,39 @@ Page({
       url: '../address/address',
     })
   },
-
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
+   * 获取购买列表
    */
-  onPullDownRefresh: function () {
+  getBuyList(ids) {
+    if (ids) {
+      ids = ids.split(',');
+    }
 
+    var data = this.data.listData;
+
+    var selectedData = data.filter(function (v) {
+      return ids.indexOf(v.id) > -1;
+    });
+
+    this.setData({ buyList: selectedData});
   },
 
   /**
-   * 页面上拉触底事件的处理函数
+   * 查看详情
    */
-  onReachBottom: function () {
-
+  toViewDetail(e) {
+    var id = e.target.dataset.id;
+    wx.navigateTo({
+      url: '../book-detail/book-detail?id=' + id,
+    })
   },
 
   /**
-   * 用户点击右上角分享
+   * 去支付
    */
-  onShareAppMessage: function () {
-
+  toPay() {
+    wx.navigateTo({
+      url: '../payMethod/payMethod',
+    })
   }
 })

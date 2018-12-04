@@ -20,8 +20,12 @@
         value="{{currentItem.region}}"
         custom-item="{{customItem}}"
         >
-        <view class="picker">
-          {{currentItem.region[0] || currentItem.province}}，{{currentItem.region[1] || currentItem.city}}，{{currentItem.region[2] || currentItem.area}}
+        <view class="picker" wx:if='{{currentItem.region[0].length && currentItem.region[0].length!=1}}'>
+          {{currentItem.region[0]}}，{{currentItem.region[1]}}，{{currentItem.region[2]}}
+        </view>
+
+        <view class="picker" wx:if='{{currentItem.region[0].length==1}}'>
+          {{currentItem.province}}，{{currentItem.city}}，{{currentItem.area}}
         </view>
       </picker>
     </view>

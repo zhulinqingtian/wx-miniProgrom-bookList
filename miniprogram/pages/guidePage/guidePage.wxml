@@ -1,6 +1,6 @@
 <view>
   <view class='center-block'>
-    <image src='../../images/flash-logo.png'></image>
+    <image src='../../images/doc/flash-logo.png'></image>
   </view>
   <view class='dots-block'>
     <view class='dot'></view>
@@ -8,7 +8,7 @@
     <view class='dot'></view>
   </view>
 
-  <navigator url="../index/index" open-type="switchTab" >
+  <navigator url="../list/list" open-type="switchTab" >
     <button class="btn" style='width:120px;margin: 0 auto;'>立即体验</button>
   </navigator>
 </view>

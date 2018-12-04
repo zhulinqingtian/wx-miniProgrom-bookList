@@ -1,0 +1,78 @@
+<!-- 支付方式 -->
+<view class="popup-memu">
+    <view class="line" style="background-color: rgb(255, 255, 255)"></view>
+
+    <view class="payMode" bindtap="pay" data-pay_type='weipay'>
+        <view class='iconfont icon-weixin light-green'></view>
+        <text style="width:70%">微信</text>
+        <view class='iconfont icon-shouqi'></view>
+    </view>
+
+    <view class="payMode" bindtap="pay" data-pay_type='1'>
+        <view class='iconfont icon-yinhangqia dark-yellow'></view>
+        <text style="width:70%">银行卡</text>
+        <view class='iconfont icon-shouqi'></view>
+    </view>
+
+    <view class="payMode" bindtap="pay" data-pay_type='2'>
+        <view class='iconfont icon-huiyuanqia hotpink'></view>
+        <text style="width:70%">会员卡</text>
+        <view class='iconfont icon-shouqi'></view>
+    </view>
+
+</view>
+
+<!-- 密码框带键盘 -->
+<action-sheet hidden="{{showKeyBoard}}" bindchange="operateKeyboard">
+  <!-- 输入密码部分 -->
+  <view class='password-input'>
+    <view>
+        <text style="display:{{inputPassword[0] ? '' : 'none'}}"></text>
+    </view>
+    <view>
+        <text style="display:{{inputPassword[1] ? '' : 'none'}}"></text>
+    </view>
+    <view>
+        <text style="display:{{inputPassword[2] ? '' : 'none'}}"></text>
+    </view>
+    <view>
+        <text style="display:{{inputPassword[3] ? '' : 'none'}}"></text>
+    </view>
+    <view>
+        <text style="display:{{inputPassword[4] ? '' : 'none'}}"></text>
+    </view>
+    <view>
+        <text style="display:{{inputPassword[5] ? '' : 'none'}}"></text>
+    </view>
+  </view>
+
+  <!-- 键盘部分 -->
+  <view class='tips'>请输入支付密码(<text>-￥100</text>)</view>
+    <view class='keyboard'>
+      <!-- 数字部分 -->
+      <view class='left number'>
+          <view data-key="1" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>1</view>
+          <view data-key="2" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>2</view>
+          <view data-key="3" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>3</view>
+          <view data-key="4" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>4</view>
+          <view data-key="5" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>5</view>
+          <view data-key="6" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>6</view>
+          <view data-key="7" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>7</view>
+          <view data-key="8" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>8</view>
+          <view data-key="9" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>9</view>
+          <view data-key="X" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>X</view>
+          <view data-key="0" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>0</view>
+          <view data-key="." hover-class='active' hover-stay-time='100' bindtap='inputPassword'>.</view>
+      </view>
+
+      <!-- 符号部分 -->
+      <view class='right ctr-btn'>
+        <view class='ctr-btn-item' hover-class='active' hover-stay-time='100' bindtap='clear'>
+            <label>删除</label>
+        </view>
+        <view class='ctr-btn-item' hover-class='active' hover-stay-time='100'
+          bindtap='operateKeyboard'>取消</view>
+      </view>
+    </view>
+
+</action-sheet>

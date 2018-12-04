@@ -67,11 +67,11 @@
         <view class='info opt-line'>
           <!-- 编辑 -->
           <icon
-              wx:if="{{manageAddressList}}"
-              class='iconfont icon-iconfontzhizuobiaozhun0264'
-              data-id="{{item.id}}"
-              bindtap='updateItem'
-              ></icon>
+            wx:if="{{manageAddressList}}"
+            class='iconfont icon-iconfontzhizuobiaozhun0264'
+            data-id="{{item.id}}"
+            bindtap='updateItem'
+          ></icon>
 
           <!-- 删除地址 -->
           <icon

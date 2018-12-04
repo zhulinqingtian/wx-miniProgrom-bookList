@@ -1,5 +1,7 @@
 //index.js
-const app = getApp()
+const app = getApp();
+
+const { ArticleAPI } = require('../../api/api');
 
 Page({
   data: {
@@ -7,7 +9,17 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    imgUrls: [
+      '../../images/banner/banner_03.gif',
+      '../../images/banner/banner_06.gif',
+      '../../images/banner/banner_08.gif',
+      '../../images/banner/banner_10.gif',
+      '../../images/banner/banner_13.gif',
+      '../../images/banner/banner_16.gif',
+      '../../images/banner/banner_19.gif',
+      '../../images/banner/banner_21.jpg'
+    ]
   },
 
   onLoad: function() {

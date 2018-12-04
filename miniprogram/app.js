@@ -1,4 +1,15 @@
 //app.js
+const { UserAPI } = require('/api/api');
+
+// ArticleAPI.findByPage({ ...params })
+// .then(res => {
+//   console.log(res)
+//   
+// }).catch(err => {
+//   console.log('错了')
+// });
+
+//app.js
 App({
   globalData: {
     collectData: [], // 收藏列表 {id: '', name: '', price: '', collected: ''}
@@ -56,7 +67,7 @@ App({
         ],
         collected: false, // 是否被收藏
         price: 65,
-        src: '../../images/HongLou.jpg',
+        src: '../../images/book-list/HongLou.jpg',
         addNumber: 0
       },
       {
@@ -119,7 +130,7 @@ App({
         ],
         collected: false,
         price: 78,
-        src: '../../images/xiyou.jpg',
+        src: '../../images/book-list/xiyou.jpg',
         addNumber: 0
       },
       {
@@ -157,7 +168,7 @@ App({
         ],
         collected: false,
         price: 88,
-        src: '../../images/shuihu.jpg',
+        src: '../../images/book-list/shuihu.jpg',
         addNumber: 0
       },
       {
@@ -191,7 +202,7 @@ App({
         ],
         collected: false,
         price: 79,
-        src: '../../images/sanguo.jpg',
+        src: '../../images/book-list/sanguo.jpg',
         addNumber: 0
       }
     ],
@@ -202,7 +213,7 @@ App({
         author: '曹雪芹',
         collected: false, // 是否被收藏
         price: 65,
-        src: '../../images/HongLou.jpg',
+        src: '../../images/book-list/HongLou.jpg',
         addNumber: 0
       },
       {
@@ -211,7 +222,7 @@ App({
         author: '吴承恩',
         collected: false,
         price: 78,
-        src: '../../images/xiyou.jpg',
+        src: '../../images/book-list/xiyou.jpg',
         addNumber: 0
       },
       {
@@ -220,7 +231,7 @@ App({
         author: '施耐庵',
         collected: false,
         price: 88,
-        src: '../../images/shuihu.jpg',
+        src: '../../images/book-list/shuihu.jpg',
         addNumber: 0
       },
       {
@@ -229,14 +240,14 @@ App({
         author: '罗贯中',
         collected: false,
         price: 79,
-        src: '../../images/sanguo.jpg',
+        src: '../../images/book-list/sanguo.jpg',
         addNumber: 0
       }
     ],
     addressList: [
       {
         id: 1,
-        province: '陕西省',
+        province: '山西省',
         city: '太原市',
         area: '小店区',
         consigneeName: '姜姜',
@@ -272,7 +283,7 @@ App({
     return wx.showToast({
       title: title,
       icon: 'warn',
-      duration: 5000
+      duration: 1000
     });
   },
 

@@ -24,6 +24,24 @@
 .light-gray{
   color: #999;
 }
+.green{
+  color: forestgreen;
+}
+.light-green{
+  color: chartreuse;
+}
+.dark-yellow{
+  color: darkkhaki;
+}
+.yellow{
+  color: yellow;
+}
+.hotpink{
+  color: hotpink;
+}
+.purple{
+  color: blueviolet;
+}
 
 /* 常用背景颜色 */
 .bg-red{

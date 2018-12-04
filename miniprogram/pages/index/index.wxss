@@ -147,3 +147,15 @@ page {
   width: 100%;
   padding-left: 20px;
 }
+.swiper-block{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.swiper-block swiper{
+  height:100%;
+}
+.swiper-block image{
+  width: 100%;
+  height:100%;
+}
