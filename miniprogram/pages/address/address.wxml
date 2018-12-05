@@ -19,7 +19,7 @@
 
         <!-- 使用地址 -->
         <view class="use-btn">
-          <navigator url="/pages/cartList/cartList?id={{item.id}}" open-type="navigate" class="uploader-text">
+          <navigator url="/pages/buy/buy?addr_id={{item.id}}&selectedIds={{selectedIds}}" open-type="navigate" class="uploader-text">
             <view 
               class='iconfont icon-jiahao'
               style="color: {{item.isDefault ? '#fff' : '#666'}};" 
@@ -76,7 +76,7 @@
           <!-- 删除地址 -->
           <icon
               wx:if="{{manageAddressList}}"
-              class='iconfont icon-zhankai'
+              class='iconfont icon-shanchu'
               data-id="{{item.id}}"
               bindtap='delOneItem'
               ></icon>
@@ -91,7 +91,16 @@
       <view class='iconfont icon-jiahao'></view>
     </navigator>
   </view>
+
+  <!-- 编辑地址 -->
   <view class='delBtn' bindtap='manageList'>
-    <view class='iconfont icon-jianhao'></view>
+    <view class='iconfont icon-yingyongguanli'></view>
+  </view>
+
+  <!-- 返回首页 -->
+  <view>
+    <navigator url="../index/index" open-type="switchTab" class="uploader-text">
+      <button type='primary'>返回首页</button>
+    </navigator>
   </view>
 </view>

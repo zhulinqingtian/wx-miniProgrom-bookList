@@ -70,6 +70,9 @@ page>.panel{
   left: 46px;
   background-color: rgb(250, 26, 26);
 }
+.delBtn .iconfont{
+  font-size: 20px;
+}
 .del-one-section{
   position: absolute;
   top: -12px;
@@ -82,7 +85,7 @@ page>.panel{
   padding-right: 4px;
   line-height: 16px;
 }
-.icon-zhankai{
-  font-size: 28px;
+.icon-shanchu{
+  font-size: 22px;
   vertical-align: bottom;
 }

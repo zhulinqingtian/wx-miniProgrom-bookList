@@ -13,6 +13,11 @@ Page({
     this.createIcon();
     this.initData(); // 初始化tempData
   },
+  onShow() {
+    // 每次购买完成之后重置状态
+    this.toClear();
+    this.setData({ buyIsDisabled: true});
+  },
   // 未使用 手动修改数量
   countAmount(e) {
     var id = e.target.dataset.id; // 当前元素的id 或者 data-id 属性

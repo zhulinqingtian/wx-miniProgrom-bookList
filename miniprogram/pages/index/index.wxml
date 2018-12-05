@@ -43,13 +43,27 @@
   <!-- 轮播图 -->
   <view class='swiper-block'>
     <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
-      <block wx:for="{{imgUrls}}">
+      <block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="{{index}}" wx:key="index">
         <swiper-item>
           <image src="{{item}}" class="slide-image" width="355" height="150"/>
         </swiper-item>
       </block>
     </swiper>
   </view>
+
+  <!-- 书籍分类 -->
+  <view class='type-label-block'>
+    <block wx:for="{{typeList}}" wx:for-item="item" wx:for-index="{{index}}" wx:key="{{item.status}}">
+      <navigator
+        url="/pages/list/list?type={{item.status}}"
+        open-type="switchTab"
+        class="label"
+        >
+        <view class='dark-green'>{{item.type}}</view>
+      </navigator>
+    </block>
+  </view>
+
 
   <!-- 跳转列表页 -->
   <view class="uploader toPage">

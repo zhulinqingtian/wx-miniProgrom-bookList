@@ -15,9 +15,13 @@ Page({
     editId: '' // 编辑地址的id
   },
   onLoad(option) {
-    if (option && option.id) {
-      this.setData({ editId: option.id });
-      this.getCurrentItemInfo(option.id);
+    if (option) {
+
+      // 从地址列表页面跳转过来，编辑地址
+      if (option.id) {
+        this.setData({ editId: option.id });
+        this.getCurrentItemInfo(option.id);
+      }
     }
   },
   // 编辑地址部分
@@ -30,7 +34,6 @@ Page({
         if (v.id == id) {
           _this.setData({ currentItem: v});
           _this.setData({ 'currentItem.region': v.province +  '-' + v.city + '-' + v.area});
-          console.log(v);
         }
       });
     }

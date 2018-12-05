@@ -27,22 +27,22 @@
   <!-- 输入密码部分 -->
   <view class='password-input'>
     <view>
-        <text style="display:{{inputPassword[0] ? '' : 'none'}}"></text>
+        <text style="display:{{payCode[0] ? '' : 'none'}}"></text>
     </view>
     <view>
-        <text style="display:{{inputPassword[1] ? '' : 'none'}}"></text>
+        <text style="display:{{payCode[1] ? '' : 'none'}}"></text>
     </view>
     <view>
-        <text style="display:{{inputPassword[2] ? '' : 'none'}}"></text>
+        <text style="display:{{payCode[2] ? '' : 'none'}}"></text>
     </view>
     <view>
-        <text style="display:{{inputPassword[3] ? '' : 'none'}}"></text>
+        <text style="display:{{payCode[3] ? '' : 'none'}}"></text>
     </view>
     <view>
-        <text style="display:{{inputPassword[4] ? '' : 'none'}}"></text>
+        <text style="display:{{payCode[4] ? '' : 'none'}}"></text>
     </view>
     <view>
-        <text style="display:{{inputPassword[5] ? '' : 'none'}}"></text>
+        <text style="display:{{payCode[5] ? '' : 'none'}}"></text>
     </view>
   </view>
 
@@ -51,18 +51,18 @@
     <view class='keyboard'>
       <!-- 数字部分 -->
       <view class='left number'>
-          <view data-key="1" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>1</view>
-          <view data-key="2" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>2</view>
-          <view data-key="3" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>3</view>
-          <view data-key="4" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>4</view>
-          <view data-key="5" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>5</view>
-          <view data-key="6" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>6</view>
-          <view data-key="7" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>7</view>
-          <view data-key="8" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>8</view>
-          <view data-key="9" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>9</view>
-          <view data-key="X" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>X</view>
-          <view data-key="0" hover-class='active' hover-stay-time='100' bindtap='inputPassword'>0</view>
-          <view data-key="." hover-class='active' hover-stay-time='100' bindtap='inputPassword'>.</view>
+          <view data-key="1" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>1</view>
+          <view data-key="2" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>2</view>
+          <view data-key="3" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>3</view>
+          <view data-key="4" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>4</view>
+          <view data-key="5" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>5</view>
+          <view data-key="6" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>6</view>
+          <view data-key="7" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>7</view>
+          <view data-key="8" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>8</view>
+          <view data-key="9" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>9</view>
+          <view data-key="X" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>X</view>
+          <view data-key="0" hover-class='active' hover-stay-time='100' bindtap='enterPassword'>0</view>
+          <view data-key="." hover-class='active' hover-stay-time='100' bindtap='enterPassword'>.</view>
       </view>
 
       <!-- 符号部分 -->

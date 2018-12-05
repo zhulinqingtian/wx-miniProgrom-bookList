@@ -25,10 +25,13 @@
   color: #999;
 }
 .green{
-  color: forestgreen;
+  color: #35fc96;
 }
 .light-green{
   color: chartreuse;
+}
+.dark-green{
+  color:#26ad67;
 }
 .dark-yellow{
   color: darkkhaki;

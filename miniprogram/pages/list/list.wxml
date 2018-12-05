@@ -1,4 +1,11 @@
 <view class="panel outer-panel">
+  <!-- 搜索输入 -->
+  <view class='search-section'>
+    <input type="text" placeholder='请输入关键字'></input>
+    <button type='primary' size='mini'>查询</button>
+  </view>
+
+  <!-- 列表部分 -->
   <view class="list-block">
 
     <block

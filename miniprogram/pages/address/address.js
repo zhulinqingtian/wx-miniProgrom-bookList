@@ -3,10 +3,16 @@ var app = getApp();
 Page({
   data: {
     addressListData: [],
-    manageAddressList: false
+    manageAddressList: false,
+    selectedIds: '' // 从buy页面跳转过来，修改地址，selectedIds： 已经选中的商品
   },
-  onLoad() {
+  onLoad(options) {
     this.getAddressList();
+
+    // 从buy页面跳转过来，修改收货地址，selectedIds： 已经选中的商品
+    if (options.selectedIds) {
+      this.setData({ selectedIds: options.selectedIds });
+    }
   },
   getAddressList() {
     var data = app.globalData.addressList;
@@ -43,11 +49,7 @@ Page({
     });
 
     this.setData({ addressListData: data});
-    wx.showToast({
-      title: title,
-      icon: 'success',
-      duration: 1000
-    })
+    app.showToast(title);
   },
   // 管理地址
   manageList() {

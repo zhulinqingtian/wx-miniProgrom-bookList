@@ -54,7 +54,6 @@ page {
 }
 
 .uploader-text, .tunnel-text {
-  width: 100%;
   line-height: 52px;
   font-size: 34rpx;
   color: #007aff;
@@ -149,7 +148,7 @@ page {
 }
 .swiper-block{
   width: 100%;
-  height: 200px;
+  height: 160px;
   overflow: hidden;
 }
 .swiper-block swiper{
@@ -158,4 +157,20 @@ page {
 .swiper-block image{
   width: 100%;
   height:100%;
+}
+.type-label-block{
+  margin: 10px 0px 0px 0px;
+  padding: 10px 10px 0px 10px;
+}
+
+.type-label-block .label{
+  display: inline-block;
+  padding: 0px 10px;
+  overflow: hidden;
+  margin-right:8px;
+  margin-bottom: 8px;
+  border: 1px solid #26ad67;
+  border-radius: 8px;
+  line-height: 28px;
+  text-align: center;
 }

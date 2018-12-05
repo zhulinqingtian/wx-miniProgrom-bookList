@@ -2,11 +2,11 @@
   <!-- 地址信息 -->
   <view class='consignee-info bg-white section'>
     <view class='list-item'>
-      <view class='left'>{{HarvestName}}</view>
-      <view class='right'>{{HarvestTel}}</view>
+      <view class='left'>{{HarvestInfo.HarvestName}}</view>
+      <view class='right'>{{HarvestInfo.HarvestTel}}</view>
     </view>
     <view>
-      {{HarvestAddress}}
+      {{HarvestInfo.HarvestAddress}}
 
       <!-- 编辑地址 -->
       <view class='iconfont icon-iconfontzhizuobiaozhun0264' bindtap='toAddressPage'></view>
