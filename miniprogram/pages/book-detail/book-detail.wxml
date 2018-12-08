@@ -1,7 +1,6 @@
 <view class="panel outer-panel">
   <view class="panel main-panel">
-    <view class="left">
-      <image src="{{currentBook.src}}" data-src="{{currentBook.src}}"></image>
+    <view class="left" style='background: url("{{currentBook.src}}") center center no-repeat;background-size: 90% auto;'>
     </view>
 
     <view class="right">

@@ -51,19 +51,6 @@
     </swiper>
   </view>
 
-  <!-- 书籍分类 -->
-  <view class='type-label-block'>
-    <block wx:for="{{typeList}}" wx:for-item="item" wx:for-index="{{index}}" wx:key="{{item.status}}">
-      <navigator
-        url="/pages/list/list?type={{item.status}}"
-        open-type="switchTab"
-        class="label"
-        >
-        <view class='dark-green'>{{item.type}}</view>
-      </navigator>
-    </block>
-  </view>
-
 
   <!-- 跳转列表页 -->
   <view class="uploader toPage">

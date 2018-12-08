@@ -17,42 +17,6 @@ Page({
       '../../images/banner/banner_09.jpg',
       '../../images/banner/banner_11.jpg',
       '../../images/banner/banner_13.jpg'
-    ],
-
-    // 书籍分类
-    typeList: [
-      {
-        status: 0,
-        type: '文学'
-      },
-      {
-        status: 1,
-        type: '随笔'
-      },
-      {
-        status: 2,
-        type: '历史'
-      },
-      {
-        status: 3,
-        type: '小说'
-      },
-      {
-        status: 4,
-        type: '科幻'
-      },
-      {
-        status: 5,
-        type: '哲学'
-      },
-      {
-        status: 6,
-        type: '工具'
-      },
-      {
-        status: 7,
-        type: '专业知识'
-      }
     ]
   },
 

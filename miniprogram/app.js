@@ -68,7 +68,8 @@ App({
         collected: false, // 是否被收藏
         price: 65,
         src: '../../images/book-list/HongLou.jpg',
-        addNumber: 0
+        addNumber: 0,
+        type: 8
       },
       {
         id: '002',
@@ -131,7 +132,8 @@ App({
         collected: false,
         price: 78,
         src: '../../images/book-list/xiyou.jpg',
-        addNumber: 0
+        addNumber: 0,
+        type: 8
       },
       {
         id: '003',
@@ -169,7 +171,8 @@ App({
         collected: false,
         price: 88,
         src: '../../images/book-list/shuihu.jpg',
-        addNumber: 0
+        addNumber: 0,
+        type: 8
       },
       {
         id: '004',
@@ -203,7 +206,280 @@ App({
         collected: false,
         price: 79,
         src: '../../images/book-list/sanguo.jpg',
-        addNumber: 0
+        addNumber: 0,
+        type: 8
+      },
+      {
+        id: '005',
+        name: 'Node.js开发指南',
+        author: 'BYVoid',
+        authorIntro: '郭家寶（BYVoid），清华大学计算机系2010级本科生，曾获得信息学奥林匹克竞赛（NOI）金牌。他从中学开始涉足开源开发，参与过「汉典网」等许多Web项目的前后端设计开发，同时是Linux输入法ibus-pinyin的作者。他从2009年Node.js诞生之始，就一直在关注它的发展，有过许多用Node.js建立网站的经验，活跃于CNode社区。',
+        intro: '内容简介：Node.js是一种方兴未艾的新技术，诞生于2009年。经过两年的快速变化，Node.js生态圈已经逐渐走向稳定。Node.js采用了以往类似语言和框架中非常罕见的技术，总结为关键词就是：非阻塞式控制流、异步I/O、单线程消息循环。不少开发者在入门时总要经历一个痛苦的思维转变过程，给学习带来巨大的障碍。 而本书的目的就是帮助读者扫清这些障碍，学会使用Node.js进行Web后端开发，同时掌握事件驱动的异步式编程风格，以便进一步利用Node.js的高级特性。'
+        ,
+        chapterList: [
+          {
+            id: 1,
+            title: '第1章 　Node.js简介',
+            sketch: ''
+          },
+          {
+            id: 2,
+            title: '第2章 　安装和配置Node.js',
+            sketch: ''
+          },
+          {
+            id: 3,
+            title: '第3章 　Node.js快速入门',
+            sketch: ''
+          },
+          {
+            id: 4,
+            title: '第4章 　Node.js核心模块',
+            sketch: ''
+          },
+          {
+            id: 5, title: '第5章 　使用Node.js进行Web开发', sketch: ''
+          },
+          {
+            id: 6, title: '第6章 　Node.js进阶话题', sketch: ''
+          }
+        ],
+        collected: false,
+        price: 45,
+        src: '../../images/book-list/nodejs.jpg',
+        addNumber: 0,
+        type: 7 // 分类
+      },
+      {
+        id: '006',
+        name: 'HTML5 For Web Designer',
+        author: '[英] Jeremy Keith ',
+        authorIntro: 'Jeremy Keith is an Irish web developer living in Brighton, England, where he works with the web consultancy firm Clearleft. He has written two previous books, DOM Scripting and Bulletproof Ajax, but what he really wants to do is direct. His online home is adactio.com and his latest project is Huffduffer, a service for creating podcasts of found sounds. When he’s not making webs...',
+        intro: '内容简介：In this brilliant and entertaining user’s guide, Jeremy Keith cuts to the chase, with crisp, clear, practical examples, and his patented twinkle and charm.'
+        ,
+        chapterList: [
+          {
+            id: 1,
+            title: 'Chapter 1 A Brief History of Markup',
+            sketch: ''
+          },
+          {
+            id: 2,
+            title: 'Chapter 2 The Design of HTML5',
+            sketch: ''
+          },
+          {
+            id: 3,
+            title: 'Chapter 3 Rich Media',
+            sketch: ''
+          },
+          {
+            id: 4,
+            title: 'Chapter 4 Web Forms 2.0',
+            sketch: ''
+          },
+          {
+            id: 5, title: 'Chapter 5 Semantics', sketch: ''
+          },
+          {
+            id: 6, title: 'Chapter 6 Using HTML5 Today', sketch: ''
+          }
+        ],
+        collected: false,
+        price: 108,
+        src: '../../images/book-list/h5Design.jpg',
+        addNumber: 0,
+        type: 7 // 分类
+      },
+      {
+        id: '007',
+        name: '三生三世枕上书',
+        author: '唐七 ',
+        authorIntro: '',
+        intro: '内容简介：再掀“三生三世”畅销狂潮，完美再现唐七公子笔下最宏大的恩怨情仇 《男生女生》火爆连载一周年，引发一千万读者疯狂追捧的古言经典 如果执著终归于徒然，谁会将此生用尽，只为守候一段触摸不得的缘恋？ 如果两千多年的执念，就此放下、隔断，是否会有眼泪倾洒，以为祭奠？ '
+        ,
+        chapterList: [
+          {
+            id: 1,
+            title: '第一卷 菩提往生',
+            sketch: ''
+          },
+          {
+            id: 2,
+            title: '第二卷 梵音谷',
+            sketch: ''
+          }
+        ],
+        collected: false,
+        price: 12,
+        src: '../../images/book-list/zhenshangshu.jpg',
+        addNumber: 0,
+        type: 3 // 分类  小说
+      },
+      {
+        id: '008',
+        name: '系我一生心',
+        author: '绿亦歌 ',
+        authorIntro: '',
+        intro: '内容简介：漫漫追夫路，她从六岁追到十七岁，在教学楼下举着喇叭大叫“连羽连羽我爱你。 <br>她厚着脸皮，掰开他的手心说，喏，我把嫁妆都给你了，余生还请多多指教。 '
+        ,
+        chapterList: [
+          {
+            id: 1,
+            title: '第一章 久别重逢',
+            sketch: ''
+          },
+          {
+            id: 2,
+            title: '第二章 一个人的婚礼',
+            sketch: ''
+          },
+          {
+            id: 3,
+            title: '第三章 连连，连连',
+            sketch: ''
+          },
+          {
+            id: 4,
+            title: '第四章 我等你',
+            sketch: ''
+          },
+          {
+            id: 5,
+            title: '第五章 你曾是少年',
+            sketch: ''
+          },
+          {
+            id: 6,
+            title: '第六章 而我只有你',
+            sketch: ''
+          },
+          {
+            id: 7,
+            title: '第七章 一眼万年',
+            sketch: ''
+          },
+          {
+            id: 8,
+            title: '第八章 蝴蝶和沧海',
+            sketch: ''
+          },
+          {
+            id: 9,
+            title: '第九章 死于心碎',
+            sketch: ''
+          },
+          {
+            id: 10,
+            title: '第十章 我爱你',
+            sketch: ''
+          },
+          {
+            id: 11,
+            title: '第十一章 告别',
+            sketch: ''
+          },
+          {
+            id: 12,
+            title: '第十二章 怨长久',
+            sketch: ''
+          },
+          {
+            id: 13,
+            title: '第十三章 相思门',
+            sketch: ''
+          },
+          {
+            id: 14,
+            title: '第十四章 爱别离',
+            sketch: ''
+          },
+          {
+            id: 15,
+            title: '第十五章 余生',
+            sketch: ''
+          },
+          {
+            id: 16,
+            title: '番外一 门泊东吴万里船',
+            sketch: ''
+          },
+          {
+            id: 17,
+            title: '番外二 日月山川，极光星河',
+            sketch: ''
+          },
+          {
+            id: 18,
+            title: '后记 我因爱你而爱世人',
+            sketch: ''
+          }
+        ],
+        collected: false,
+        price: 5.0,
+        src: '../../images/book-list/my-heart.jpg',
+        addNumber: 0,
+        type: 3 // 分类  小说
+      },
+      {
+        id: '009',
+        name: '谁动了我的奶酪',
+        author: '〔美〕斯宾塞·约翰逊  译者 魏平',
+        authorIntro: '',
+        intro: '内容简介：人生犹如迷宫，每个人都在其中寻找自己的“奶酪”——稳定的工作、丰厚的收入、健康的身体、和谐的人际关系、甜蜜的爱情、美满的家庭…… <br>那么，你是否正在享受你的“奶酪”呢？ '
+        ,
+        chapterList: [
+          {
+            id: 1,
+            title: '第一章 谁动了我的奶酪',
+            sketch: ''
+          },
+          {
+            id: 2,
+            title: '第二章 对本书的赞誉',
+            sketch: ''
+          },
+          {
+            id: 3,
+            title: '第三章 中文版序言',
+            sketch: ''
+          },
+          {
+            id: 4,
+            title: '第四章 “谁动了我的奶酪”现象',
+            sketch: ''
+          },
+          {
+            id: 5,
+            title: '第五章 我们多面的人性',
+            sketch: ''
+          },
+          {
+            id: 6,
+            title: '第六章 故事背后的故事',
+            sketch: ''
+          },
+          {
+            id: 7,
+            title: '第七章 芝加哥的同学聚会',
+            sketch: ''
+          },
+          {
+            id: 8,
+            title: '第八章 下午茶时的讨论',
+            sketch: ''
+          },
+          {
+            id: 9,
+            title: '第九章 《谁动了我的奶酪？》大事记',
+            sketch: ''
+          }
+        ],
+        collected: false,
+        price: 6.0,
+        src: '../../images/book-list/cheese.jpg',
+        addNumber: 0,
+        type: 1 // 分类  儿童文学
       }
     ],
     cartData: [ // 购物车列表 {id: '', name: '', price: '', addNumber: ''}

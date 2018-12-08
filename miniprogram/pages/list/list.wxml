@@ -1,12 +1,25 @@
 <view class="panel outer-panel">
   <!-- 搜索输入 -->
   <view class='search-section'>
-    <input type="text" placeholder='请输入关键字'></input>
-    <button type='primary' size='mini'>查询</button>
+    <input type="text" placeholder='请输入关键字' value="{{selectStr}}" bindblur='resetKeyWord'></input>
+    <button type='primary' size='mini' bindtap='selectByName' data-name="{{selectStr}}">查询</button>
+  </view>
+
+    <!-- 书籍分类 -->
+  <view class='type-label-block'>
+    <block wx:for="{{typeList}}" wx:for-item="item" wx:for-index="index" wx:key="{{item}}">
+      <view class='label'
+        style="color:{{colorTextMap[item]}};border-color: {{colorTextMap[item]}}"
+        data-type="{{item}}"
+        data-index="{{index}}"
+        data-color="{{colorTextMap[item]}}"
+        bindtap='getAllBookList'
+        >{{statusTextMap[item]}}</view>
+    </block>
   </view>
 
   <!-- 列表部分 -->
-  <view class="list-block">
+  <view class="list-block" wx:if="{{bookList.length}}">
 
     <block
         wx:for="{{bookList}}"
@@ -14,19 +27,23 @@
         wx:key="{{item.id}}"
         bindtap="viewDetail"
     >
-      <view class="list-item">
-        <image
-            src="{{item.src}}"
-            data-src="{{item.src}}"
-            bindtap="viewPreviewImage"
-            class="list-pic">
-        </image>
+      <view class="list-item" style='background: url("{{item.src}}") center center no-repeat;background-size: 90% 90%;'>
 
-        <navigator url="/pages/book-detail/book-detail?id={{item.id}}" open-type="navigate" class="uploader-text">
-          <view>{{item.name}}</view>
-        </navigator>
+        <view class='mask'>
+          <navigator url="/pages/book-detail/book-detail?id={{item.id}}" open-type="navigate" class="uploader-text">
+            <view class='name'>{{item.name}}</view>
+          </navigator>
+        </view>
+
       </view>
     </block>
 
   </view>
+
+  <!-- 暂无数据 -->
+  <view class='no-data' wx:if="{{!bookList.length}}">
+    <image src='../../images/no-data-img.jpg'></image>
+    <button type='primary' size='mini' bindtap='getAllBookList'>点我刷新</button>
+  </view>
+
 </view>

@@ -1,25 +1,18 @@
 .main-panel{
   width: 98%;
-  position: relative;
+  min-height: 120px;
   padding: 10px 0px;
+  display: flex;
 }
 .main-panel .left, .main-panel .right{
-  display: inline-block;
   padding: 10px 0px;
 }
 .main-panel .left{
   width: 40%;
 }
-.main-panel .left image{
-  width: 120px;
-  height:120px;
-}
+
 .main-panel .right{
-  position: absolute;
-  left: 40%;
-  right:0;
-  top: 0;
-  bottom: 0;
+  flex: 1;
 }
 .right .uploader-text{
   display: inline-block;

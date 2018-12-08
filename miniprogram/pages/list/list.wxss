@@ -14,23 +14,52 @@
   border: 1px solid #f0f0f0;
   box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
   overflow: hidden;
+  position: relative;
 }
 .list-item:nth-child(2n){
   margin-right: 0;
 }
-.list-item image{
+.list-item .mask{
+  position: absolute;
   width: 100%;
-  height:160px;
-  border-radius: 4px;
+  height: 35%;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  transition: all 0.5s ease-in;
+  animation-name: leftIn;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s; /*执行时间*/
 }
-.list-item text{
-  margin: 16px 0;
+
+.list-item .mask .name{
+  width: 90%;
   text-align: center;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 20px auto;
+  transition: all 1s ease-in;
+  animation-name: nameScale;
+  animation-iteration-count: 1;
+  animation-duration: 1s; /*执行时间*/
 }
-.uploader-text view{
-  display: block;
-  text-align:center;
-  line-height: 30px;
+
+@keyframes leftIn{
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes nameScale{
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 /* 搜索 */
@@ -51,4 +80,27 @@
 }
 .search-section button{
   line-height: 26px;
+}
+.type-label-block{
+  margin: 10px 0px 0px 0px;
+  padding: 10px 10px 0px 10px;
+}
+
+.type-label-block .label{
+  display: inline-block;
+  padding: 0px 10px;
+  overflow: hidden;
+  margin-right:8px;
+  margin-bottom: 8px;
+  border: 1px solid #26ad67;
+  border-radius: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+.no-data{
+  text-align: center;
+  margin: 10px auto;
+}
+.no-data image{
+  width: 100%;
 }
