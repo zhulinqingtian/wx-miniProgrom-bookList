@@ -5,9 +5,9 @@ function axios(data) {
     data.params = {};
   }
   return new Promise((resove, reject) => {
-    var u = config.host + data.url;
+    var url = config.host + data.url;
     wx.request({
-      url: u,
+      url: url,
       data: data.params,
       method: data.type,
       header: { "Content-Type": "application/json" },
