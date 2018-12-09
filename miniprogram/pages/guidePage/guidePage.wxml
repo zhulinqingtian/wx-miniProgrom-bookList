@@ -8,7 +8,7 @@
     <view class='dot'></view>
   </view>
 
-  <navigator url="../list/list" open-type="switchTab" >
+  <navigator url="../index/index" open-type="switchTab" class='toIndex'>
     <button class="btn" style='width:120px;margin: 0 auto;'>立即体验</button>
   </navigator>
 </view>

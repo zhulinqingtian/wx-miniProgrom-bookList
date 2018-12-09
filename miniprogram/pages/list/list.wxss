@@ -8,7 +8,7 @@
 }
 .list-item{
   width: 45%;
-  height:200px;
+  height:180px;
   margin: 16px 0px;
   border-radius: 4px;
   border: 1px solid #f0f0f0;
@@ -25,10 +25,10 @@
   height: 35%;
   bottom: 0;
   background-color: rgba(0,0,0,0.6);
-  transition: all 0.5s ease-in;
+  transition: all 0.8s ease-in;
   animation-name: leftIn;
   animation-iteration-count: 1;
-  animation-duration: 0.5s; /*执行时间*/
+  animation-duration: 0.8s; /*执行时间*/
 }
 
 .list-item .mask .name{
@@ -39,10 +39,10 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 20px auto;
-  transition: all 1s ease-in;
+  transition: all 1.2s ease-in;
   animation-name: nameScale;
   animation-iteration-count: 1;
-  animation-duration: 1s; /*执行时间*/
+  animation-duration: 1.2s; /*执行时间*/
 }
 
 @keyframes leftIn{

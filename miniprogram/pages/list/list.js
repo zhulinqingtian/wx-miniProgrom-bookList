@@ -15,7 +15,7 @@ Page({
       4: '科幻',
       5: '哲学',
       6: '工具',
-      7: '专业知识',
+      7: '计算机与互联网',
       8: '文学'
     },
 
@@ -63,9 +63,26 @@ Page({
           index = dataset.index,
           color = dataset.color;
 
-      var data = this.getListByType(type);
+      var data = []; // 保存查询结果
 
-      this.setData({ SearchType: type });
+      if (color == '#1AAD16') {
+        // 取消标签选择
+        if (this.data.selectStr) {
+
+          data = this.selectByKeyWord(this.data.selectStr);
+          this.setData({ SearchType: '' });
+
+        } else {
+
+          data = app.globalData.listData;
+          this.setData({ SearchType: type });
+        }
+
+      } else {
+        // 标签查询
+        data = this.getListByType(type);
+      }
+
       this.setData({ bookList: data });
     }
 
@@ -108,6 +125,10 @@ Page({
     var data = app.globalData.listData;
     var _this = this;
 
+    if (!keyWord) {
+      return data;
+    }
+
     // 过滤出包含关键字的书籍列表
     var filterArr = data.filter(function (v, i) {
       return v.name.indexOf(keyWord) > -1;
@@ -115,7 +136,7 @@ Page({
 
     if (filterArr.length) {
       filterArr.forEach(function (v, i) {
-        // 选中商品所在烈性
+        // 选中商品所在类型
         _this.updateCurrentBookStatus(v.type);
       });
     }
@@ -125,13 +146,58 @@ Page({
 
   // 回车 | blur 更新查询关键字 查询
   resetKeyWord(e) {
-    var value = e.detail.value;
+    var value = e.detail.value, data = [];
 
     if (value) {
       this.setData({ selectStr: value });
-      var data = this.selectByKeyWord(value);
-      this.setData({ bookList: data});
+      
+    } else {
+      this.setData({ selectStr: '' });
     }
+
+    var data = this.selectByKeyWord(this.data.selectStr);
+    this.setData({ bookList: data });
+  },
+
+  // 根据 名称 & 类型 查询
+  filterBookList() {
+    var originData = app.globalData.listData;
+    var data = []; // 保存过滤结果
+
+    if (!originData.length ) {
+      data = [];
+    }
+
+    var
+      type = this.data.SearchType,
+      keyword = this.data.selectStr;
+
+    if (!type && !keyword) {
+      data = originData;
+    }
+
+    if (originData.length) {
+      var arr1 = [], arr2 = [];
+
+      // 过滤
+      if (type) {
+        arr1 = this.getListByType(type);
+      }
+
+      if (keyword) {
+        arr2 = originData.filter(function (v, i) {
+          return v.name.indexOf(keyword) > -1;
+        });
+      }
+
+      var arr3 = arr1.filter(function(b) {
+        return arr2.indexOf(n) != -1;
+      });
+      console.log('arr3:', arr3);
+      data = arr3;
+    }
+    // 赋值
+    this.setData({ bookList: data });
   },
 
   // 更新当前查询出来的书籍的类型标签

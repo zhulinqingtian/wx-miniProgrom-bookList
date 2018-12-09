@@ -43,7 +43,7 @@
   <!-- 暂无数据 -->
   <view class='no-data' wx:if="{{!bookList.length}}">
     <image src='../../images/no-data-img.jpg'></image>
-    <button type='primary' size='mini' bindtap='getAllBookList'>点我刷新</button>
+    <button type='primary' size='mini' bindtap='filterBookList'>点我刷新</button>
   </view>
 
 </view>
