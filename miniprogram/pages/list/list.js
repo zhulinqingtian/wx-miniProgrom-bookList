@@ -6,6 +6,11 @@ Page({
     imgUrls: [],
     SearchType: '',
     selectStr: '',
+    minPrice: '',
+    maxPrice: '',
+    targetDate: +new Date() - 86400000 * 30,
+    setPriceRange: false, // 设置价格区间
+    displayRange: '',
 
     // 书籍类型状态
     statusTextMap: {
@@ -254,5 +259,111 @@ Page({
     wx.switchTab({
       url: 'book-detail/book-detail?id='+b_id
     });
+  },
+
+  // 筛选价格
+  displayPriceBlock() {
+    var flag = this.data.setPriceRange;
+    this.setData({ setPriceRange: !flag});
+  },
+  setMinPrice(e) {
+    // 不管值是否符合条件，先赋值，在最后查询的时候也要判断是否符合条件
+    var value = Number(e.detail.value);
+    var _this = this;
+    var formatFlag = this.checkPriceFormat(value);
+
+    // 格式判断
+    if (!formatFlag) {
+      app.showConfirmModal('请输入正确的价格');
+    }
+
+    // 有最大值时判断
+    if (_this.data.maxPrice) {
+      if (value > _this.data.maxPrice) {
+        app.showToast('后者价格不能小于前者价格');
+      }
+    }
+
+    this.setData({ minPrice: e.detail.value });
+  },
+  setMaxPrice(e) {
+    // 不管值是否符合条件，先赋值，在最后查询的时候也要判断是否符合条件
+    var value = Number(e.detail.value);
+    var _this = this;
+    var formatFlag = this.checkPriceFormat(value);
+
+    // 格式判断
+    if (!formatFlag) {
+      app.showConfirmModal('请输入正确的价格');
+    }
+
+    if (this.data.minPrice > +value) {
+      app.showToast('后者价格不能小于前者价格');
+    }
+
+    this.setData({ maxPrice: value });
+  },
+
+  // 检查价格格式
+  checkPriceFormat(value) {
+    var flag = true;
+
+    if (!/^\d+(\.\d+)?$/.test(value)) {
+      flag = false;
+    }
+
+    return flag;
+  },
+  checkPriceRange() {
+    var data = this.data;
+    var flag = true; // 符合情况
+    if (data.maxPrice) {
+      if (data.minPrice > data.maxPrice) {
+        flag = false;
+      }
+    }
+    return flag;
+  },
+
+  // 重置价格
+  resetPrice() {
+    this.setData({ maxPrice: '', minPrice: '' });
+  },
+
+  // 完成设置
+  completePriceSet() {
+    var data = this.data;
+
+    // 格式判断
+    var flag = true;
+    if (data.minPrice) {
+      var minFlag = this.checkPriceFormat(data.minPrice);
+      if (!minFlag) {
+        flag = false;
+        return app.showConfirmModal('请输入正确的价格');
+      }
+    }
+    if (data.maxPrice) {
+      flag = false;
+      var maxFlag = this.checkPriceFormat(data.maxPrice);
+      if (!maxFlag) {
+        return app.showConfirmModal('请输入正确的价格');
+      }
+    }
+    
+    // 格式正确后，判断范围是否正确
+    if (flag) {
+      var checkFlag = this.checkPriceRange(); // 判断价格是否符合条件
+      var showFlag = data.setPriceRange;
+
+      if (checkFlag) {
+        // 符合条件时，关闭筛选窗口
+        this.setData({ setPriceRange: !showFlag });
+        this.setData({ displayRange: data.minPrice + ' - ' + data.maxPrice});
+      } else {
+        this.setData({ displayRange: '' });
+        return app.showToast('后者价格不能小于前者价格');
+      }
+    }
   }
 });

@@ -56,9 +56,9 @@ Page({
         app.showToast('支付成功');
 
         setTimeout(function () {
-          wx.switchTab({
-            url: '../list/list',
-          });
+          wx.navigateBack({
+            delta: 2 // delta = 1: 输入密码页面
+          })
         }, 2000);
 
       } else {

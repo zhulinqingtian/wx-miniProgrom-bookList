@@ -10,6 +10,8 @@ const { UserAPI } = require('/api/api');
 // });
 
 //app.js
+
+const Utils = require('/public/js/util');
 App({
   globalData: {
     collectData: [], // 收藏列表 {id: '', name: '', price: '', collected: ''}
@@ -69,7 +71,8 @@ App({
         price: 65,
         src: '../../images/book-list/HongLou.jpg',
         addNumber: 0,
-        type: 8
+        type: 8,
+        launchTime: 1514736000000
       },
       {
         id: '002',
@@ -133,7 +136,8 @@ App({
         price: 78,
         src: '../../images/book-list/xiyou.jpg',
         addNumber: 0,
-        type: 8
+        type: 8,
+        launchTime: 1525104000000
       },
       {
         id: '003',
@@ -172,7 +176,8 @@ App({
         price: 88,
         src: '../../images/book-list/shuihu.jpg',
         addNumber: 0,
-        type: 8
+        type: 8,
+        launchTime: 1544400000000
       },
       {
         id: '004',
@@ -207,7 +212,8 @@ App({
         price: 79,
         src: '../../images/book-list/sanguo.jpg',
         addNumber: 0,
-        type: 8
+        type: 8,
+        launchTime: 1543939200000
       },
       {
         id: '005',
@@ -248,7 +254,8 @@ App({
         price: 45,
         src: '../../images/book-list/nodejs.jpg',
         addNumber: 0,
-        type: 7 // 分类
+        type: 7, // 分类
+        launchTime: 1541347200000
       },
       {
         id: '006',
@@ -289,7 +296,8 @@ App({
         price: 108,
         src: '../../images/book-list/h5Design.jpg',
         addNumber: 0,
-        type: 7 // 分类
+        type: 7, // 分类
+        launchTime: 1533398400000
       },
       {
         id: '007',
@@ -314,7 +322,8 @@ App({
         price: 12,
         src: '../../images/book-list/zhenshangshu.jpg',
         addNumber: 0,
-        type: 3 // 分类  小说
+        type: 3, // 分类  小说
+        launchTime: 1533398400000
       },
       {
         id: '008',
@@ -419,7 +428,8 @@ App({
         price: 5.0,
         src: '../../images/book-list/my-heart.jpg',
         addNumber: 0,
-        type: 3 // 分类  小说
+        type: 3, // 分类  小说
+        launchTime: 1543939200000
       },
       {
         id: '009',
@@ -479,7 +489,8 @@ App({
         price: 6.0,
         src: '../../images/book-list/cheese.jpg',
         addNumber: 0,
-        type: 1 // 分类  儿童文学
+        type: 1, // 分类  儿童文学
+        launchTime: 1525104000000
       }
     ],
     cartData: [ // 购物车列表 {id: '', name: '', price: '', addNumber: ''}

@@ -5,7 +5,30 @@
     <button type='primary' size='mini' bindtap='selectByName' data-name="{{selectStr}}">查询</button>
   </view>
 
-    <!-- 书籍分类 -->
+  <!-- 排序 -->
+  <view class='sort-block'>
+    <label>排序：</label>
+    <view class='sort-item' bindtap='displayPriceBlock'>价格区间 
+      <text wx:if="{{minPrice || maxPrice}}">：已选择{{displayRange}}</text>
+    </view>
+  </view>
+
+  <view class='sort-condition-block' wx:if="{{setPriceRange}}">
+    <view class='line'>
+      <label>价格区间：</label>
+    </view>
+    <view class='line'>
+      <input type='text' placeholder='请输入' bindblur='setMinPrice' value='{{minPrice}}'></input>
+      <label> - </label>
+      <input type='text' placeholder='请输入' bindblur='setMaxPrice' value='{{maxPrice}}'></input>
+    </view>
+    <view class='operate-block'>
+      <button bindtap='resetPrice'>重置</button>
+      <button type='primary' bindtap='completePriceSet'>确定</button>
+    </view>
+  </view>
+
+  <!-- 书籍分类 -->
   <view class='type-label-block'>
     <block wx:for="{{typeList}}" wx:for-item="item" wx:for-index="index" wx:key="{{item}}">
       <view class='label'
@@ -27,7 +50,12 @@
         wx:key="{{item.id}}"
         bindtap="viewDetail"
     >
-      <view class="list-item" style='background: url("{{item.src}}") center center no-repeat;background-size: 90% 90%;'>
+      <view class="list-item" style='background: url("{{item.src}}") center center no-repeat;background-size: 100% 100%;'>
+        <view class='remark-icon'
+          wx:if="{{item.launchTime > targetDate }}"
+        >
+          <image src="../../images/remark/style6/new.png"></image>
+        </view>
 
         <view class='mask'>
           <navigator url="/pages/book-detail/book-detail?id={{item.id}}" open-type="navigate" class="uploader-text">

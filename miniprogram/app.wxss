@@ -8,6 +8,16 @@
   box-sizing: border-box;
 } 
 
+
+/* 控件样式 */
+input[type=text]{
+  line-height: 26px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+
 /* 常用颜色 */
 .blue{
   color: #3596fc;

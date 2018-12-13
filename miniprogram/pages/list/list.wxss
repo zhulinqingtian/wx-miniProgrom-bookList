@@ -1,20 +1,31 @@
 .list-block{
-  width: 96%;
+  width: 100%;
   margin:0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  border-radius: 15px;
+  padding: 0px 10px;
 }
 .list-item{
   width: 45%;
   height:180px;
   margin: 16px 0px;
-  border-radius: 4px;
-  border: 1px solid #f0f0f0;
-  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
+}
+.remark-icon{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:70px;
+  height:70px;
+}
+.remark-icon image{
+  width: 100%;
+  height: 100%;
 }
 .list-item:nth-child(2n){
   margin-right: 0;
@@ -96,6 +107,7 @@
   border-radius: 14px;
   line-height: 28px;
   text-align: center;
+  font-size: 16px;
 }
 .no-data{
   text-align: center;
@@ -103,4 +115,76 @@
 }
 .no-data image{
   width: 100%;
+}
+.sort-block{
+  margin: 10px 0px;
+}
+.sort-block .sort-item, .sort-block label{
+  font-size: 14px;
+  line-height: 28px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+.sort-condition-block{
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  animation-name: leftIn;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  border: 1px solid #f0f0f0;
+}
+.sort-condition-block .line{
+  margin: 10px;
+  padding: 10px;
+}
+.sort-condition-block .line input{
+  display: inline-block;
+  width: 35%;
+  font-size: 14px;
+}
+.sort-condition-block .line label{
+  display: inline-block;
+  margin: 0px 10px;
+  vertical-align: top;
+}
+.operate-block{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.operate-block button{
+  width: 48%;
+  display: inline-block;
+}
+
+.leftIn{
+  animation-name: leftIn;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.leftOut{
+  animation-name: leftOut;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes leftIn {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes leftOut {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
 }
