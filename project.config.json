@@ -11,6 +11,8 @@
 	"appid": "wx42819b4daf989891",
 	"projectname": "wx-mini-book",
 	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

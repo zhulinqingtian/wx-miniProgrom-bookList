@@ -10,8 +10,35 @@ const { UserAPI } = require('/api/api');
 // });
 
 //app.js
+/**
+ * id: 编号
+ * name: 商品名称
+ * author： 作者姓名
+ * authorIntro： 作者简介
+ * intro： 内容简介
+ * chapterList：章节列表
+ * collected：是否被收藏
+ * price： 商品单价
+ * src： 商品图片
+ * addNumber： 购物车中该商品数量
+ * type： 商品类型
+ * launchTime：上架时间
+ * totalNumber： 商品总数量
+ * saleNumber：商品售出数量
+ * originPrice: 商品原价
+ * currentPrice: 商品现价
+ * 
+ * 
+ * 热卖 saleNumber > 50
+ * 
+ * 推荐 新品 launchTime在30天以内
+ * 
+ * 大甩卖 originPrice / currentPrice >= 2
+ * 
+ * 低价   originPrice - currentPrice > 0
+ */
 
-const Utils = require('/public/js/util');
+
 App({
   globalData: {
     collectData: [], // 收藏列表 {id: '', name: '', price: '', collected: ''}
@@ -67,12 +94,23 @@ App({
             sketch: '古鼎新烹凤髓香，那堪翠斝贮琼浆。莫言绮谷无风韵，试看金娃对玉郎。'
           }
         ],
+        detailsImg: [
+          '../../images/book-detail/honglou/honglou_03.jpg',
+          '../../images/book-detail/honglou/honglou_06.jpg',
+          '../../images/book-detail/honglou/honglou_08.jpg',
+          '../../images/book-detail/honglou/honglou_10.jpg',
+          '../../images/book-detail/honglou/honglou_12.jpg',
+          '../../images/book-detail/honglou/honglou_14.jpg',
+          '../../images/book-detail/honglou/honglou_16.jpg'
+        ],
         collected: false, // 是否被收藏
         price: 65,
         src: '../../images/book-list/HongLou.jpg',
         addNumber: 0,
         type: 8,
-        launchTime: 1514736000000
+        launchTime: 1514736000000,
+        totalNumber: 60, // 总共件数  剩余件数 = totalNumber - saleNumber
+        saleNumber: 50 // 卖出件数
       },
       {
         id: '002',
@@ -132,12 +170,15 @@ App({
             sketch: '老龙王拙计犯天条魏丞相遗书托冥吏'
           }
         ],
+        detailsImg: ['../../images/book-detail/xiyou1.jpg', '../../images/book-detail/xiyou2.jpg', '../../images/book-detail/xiyou3.jpg', '../../images/book-detail/xiyou4.jpg', '../../images/book-detail/xiyou5.jpg', '../../images/book-detail/xiyou6.jpg'],
         collected: false,
         price: 78,
         src: '../../images/book-list/xiyou.jpg',
         addNumber: 0,
         type: 8,
-        launchTime: 1525104000000
+        launchTime: 1525104000000,
+        totalNumber: 100,
+        saleNumber: 50
       },
       {
         id: '003',
@@ -177,7 +218,9 @@ App({
         src: '../../images/book-list/shuihu.jpg',
         addNumber: 0,
         type: 8,
-        launchTime: 1544400000000
+        launchTime: 1544400000000,
+        totalNumber: 120,
+        saleNumber: 30
       },
       {
         id: '004',
@@ -213,7 +256,9 @@ App({
         src: '../../images/book-list/sanguo.jpg',
         addNumber: 0,
         type: 8,
-        launchTime: 1543939200000
+        launchTime: 1543939200000,
+        totalNumber: 60,
+        saleNumber: 40
       },
       {
         id: '005',
@@ -255,7 +300,9 @@ App({
         src: '../../images/book-list/nodejs.jpg',
         addNumber: 0,
         type: 7, // 分类
-        launchTime: 1541347200000
+        launchTime: 1541347200000,
+        totalNumber: 80,
+        saleNumber: 10
       },
       {
         id: '006',
@@ -297,7 +344,9 @@ App({
         src: '../../images/book-list/h5Design.jpg',
         addNumber: 0,
         type: 7, // 分类
-        launchTime: 1533398400000
+        launchTime: 1533398400000,
+        totalNumber: 50,
+        saleNumber: 2
       },
       {
         id: '007',
@@ -323,7 +372,9 @@ App({
         src: '../../images/book-list/zhenshangshu.jpg',
         addNumber: 0,
         type: 3, // 分类  小说
-        launchTime: 1533398400000
+        launchTime: 1533398400000,
+        totalNumber: 100,
+        saleNumber: 100
       },
       {
         id: '008',
@@ -429,7 +480,9 @@ App({
         src: '../../images/book-list/my-heart.jpg',
         addNumber: 0,
         type: 3, // 分类  小说
-        launchTime: 1543939200000
+        launchTime: 1543939200000,
+        totalNumber: 100,
+        saleNumber: 98
       },
       {
         id: '009',
@@ -490,7 +543,9 @@ App({
         src: '../../images/book-list/cheese.jpg',
         addNumber: 0,
         type: 1, // 分类  儿童文学
-        launchTime: 1525104000000
+        launchTime: 1525104000000,
+        totalNumber: 100,
+        saleNumber: 60
       }
     ],
     cartData: [ // 购物车列表 {id: '', name: '', price: '', addNumber: ''}

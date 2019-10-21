@@ -48,7 +48,14 @@
         "text": "书籍",
         "iconPath": "images/tab/list-1.png",
         "selectedIconPath": "images/tab/list.png"
+      },
+      {
+        "pagePath": "pages/statistic/statistic",
+        "text": "我的",
+        "iconPath": "images/tab/my-1.png",
+        "selectedIconPath": "images/tab/my.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

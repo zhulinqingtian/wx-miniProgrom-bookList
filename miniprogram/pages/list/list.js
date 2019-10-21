@@ -1,3 +1,5 @@
+const Utils = require('../../public/js/util');
+
 var app = getApp();
 
 Page({
@@ -198,7 +200,6 @@ Page({
       var arr3 = arr1.filter(function(b) {
         return arr2.indexOf(n) != -1;
       });
-      console.log('arr3:', arr3);
       data = arr3;
     }
     // 赋值

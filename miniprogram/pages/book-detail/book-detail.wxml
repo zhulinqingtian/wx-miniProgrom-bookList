@@ -1,18 +1,26 @@
 <view class="panel outer-panel">
   <view class="panel main-panel">
+
+    <!--已售罄角标-->
+      <image src="../../images/remark/sale-off.png" class="sale-off-remark" wx:if="{{currentBook.totalNumber<=currentBook.saleNumber}}"></image>
+    <!--热卖角标-->
+    <image src="../../images/remark/style1/hot-sale.png" class="sale-off-remark hot-sale" wx:elif="{{currentBook.saleNumber > 50}}"></image>
+
     <view class="left" style='background: url("{{currentBook.src}}") center center no-repeat;background-size: 90% auto;'>
     </view>
 
     <view class="right">
+      <!--购物车-->
       <navigator url="/pages/cartList/cartList" open-type="switchTab" class="uploader-text">
         <view class="toViewCart red iconfont icon-shengdangouwuche" bindtap="toViewCart"></view>
       </navigator>
+
       <view class="book-name">{{currentBook.name}}</view>
       <view class="book-info">作者：{{currentBook.author}}</view>
-      <view class="book-info">价格：{{currentBook.price}}</view>
+      <view class="book-info">价格：{{currentBook.price}}元/件</view>
       <view class="book-info" wx:if="{{currentBook.addNumber}}">购买数量：{{currentBook.addNumber || 0}}</view>
 
-      <button type="warn" bindtap="addCart" class='opt-btn'>
+      <button type="warn" bindtap="addCart" class='opt-btn' disabled="{{currentBook.totalNumber<=currentBook.saleNumber}}">
           <text>加入购物车</text>
       </button>
       
@@ -36,4 +44,13 @@
     </block>
   </view>
 
+  <!-- 1.商品细节 -->
+  <!-- 详情图 -->
+  <block wx:for="{{currentBook.detailsImg}}" wx:for-item="src" wx:for-index="{{index}}">
+    <view class='show-details-block'>
+      <image src="{{src}}"></image>
+    </view>
+  </block>
+
+  <!-- 2.评价 -->
 </view>
