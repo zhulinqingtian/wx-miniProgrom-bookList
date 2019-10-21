@@ -1,31 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28d7abb1-8bef-4227-b751-9ddea9a76f65" name="Default" comment="Add: 选择地址">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/addTodo/addTodo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/addTodo/addTodo.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/addTodo/addTodo.wxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/addTodo/addTodo.wxss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/calendar/calendar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/calendar/calendar.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/calendar/calendar.wxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/calendar/calendar.wxss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/calendar/t.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/personCenter/personCenter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/personCenter/personCenter.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/personCenter/personCenter.wxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/personCenter/personCenter.wxss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/todo/todo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/todo/todo.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/todo/todo.wxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/pages/todo/todo.wxss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/public/js/calendarUtil.js" />
+    <list default="true" id="28d7abb1-8bef-4227-b751-9ddea9a76f65" name="Default" comment="Add: vanr-weapp">
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_03.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_06.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_08.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_12.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_14.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/honglou_16.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/images/tedian_02.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/images/tedian_05.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/images/tedian_07.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/images/tedian_09.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/images/tedian_11.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/honglou/images/tedian_13.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/xiyou1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/xiyou2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/xiyou3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/xiyou4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/xiyou5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/book-detail/xiyou6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/remark/sale-off.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/tab/my-1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/images/tab/my.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/action-sheet/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/action-sheet/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/action-sheet/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/action-sheet/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/action-sheet/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/area/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/area/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/area/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/area/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/area/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/button/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/button/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/button/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/button/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/button/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/card/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/card/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/card/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/card/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/card/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell-group/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell-group/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell-group/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell-group/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell-group/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/cell/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox-group/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox-group/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox-group/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox-group/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox-group/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/checkbox/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/circle/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/circle/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/circle/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/circle/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/circle/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/col/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/col/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/col/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/col/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/col/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse-item/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse-item/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse-item/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse-item/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse-item/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/collapse/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/color.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/color.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/component.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/clearfix.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/ellipsis.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/hairline.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/mixins/clearfix.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/mixins/ellipsis.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/mixins/hairline.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/theme.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/style/var.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/utils.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/common/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/datetime-picker/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/datetime-picker/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/datetime-picker/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/datetime-picker/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/datetime-picker/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/definitions/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/definitions/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/definitions/weapp.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/definitions/weapp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/dialog.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/dialog.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/dialog/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/divider/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/divider/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/divider/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/divider/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/divider/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/field/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/field/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/field/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/field/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/field/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-button/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-button/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-button/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-button/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-button/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-icon/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-icon/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-icon/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-icon/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action-icon/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/goods-action/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid-item/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid-item/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid-item/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid-item/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid-item/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/grid/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/icon/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/icon/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/icon/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/icon/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/icon/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/info/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/info/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/info/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/info/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/info/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/loading/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/loading/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/loading/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/loading/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/loading/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/basic.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/basic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/button.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/button.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/link.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/link.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/observer/behavior.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/observer/behavior.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/observer/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/observer/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/open-type.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/open-type.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/safe-area.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/safe-area.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/touch.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/touch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/transition.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/mixins/transition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/nav-bar/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/nav-bar/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/nav-bar/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/nav-bar/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/nav-bar/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notice-bar/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notice-bar/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notice-bar/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notice-bar/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notice-bar/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/notify.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/notify/notify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/overlay/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/overlay/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/overlay/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/overlay/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/overlay/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/panel/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/panel/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/panel/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/panel/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/panel/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker-column/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker-column/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker-column/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker-column/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker-column/index.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker-column/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/shared.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/picker/shared.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/popup/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/popup/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/popup/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/popup/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/popup/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/progress/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/progress/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/progress/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/progress/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/progress/index.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/progress/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio-group/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio-group/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio-group/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio-group/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio-group/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/radio/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/rate/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/rate/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/rate/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/rate/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/rate/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/row/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/row/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/row/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/row/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/row/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/search/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/search/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/search/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/search/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/search/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar-item/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar-item/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar-item/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar-item/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar-item/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sidebar/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/slider/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/slider/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/slider/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/slider/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/slider/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/stepper/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/stepper/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/stepper/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/stepper/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/stepper/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/steps/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/steps/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/steps/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/steps/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/steps/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sticky/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sticky/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sticky/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sticky/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/sticky/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/submit-bar/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/submit-bar/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/submit-bar/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/submit-bar/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/submit-bar/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/swipe-cell/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/swipe-cell/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/swipe-cell/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/swipe-cell/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/swipe-cell/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/switch/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/switch/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/switch/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/switch/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/switch/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tab/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tab/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tab/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tab/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tab/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar-item/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar-item/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar-item/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar-item/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar-item/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabbar/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabs/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabs/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabs/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabs/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tabs/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tag/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tag/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tag/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tag/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tag/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/toast.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/toast/toast.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/transition/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/transition/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/transition/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/transition/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/transition/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tree-select/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tree-select/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tree-select/index.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tree-select/index.wxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tree-select/index.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/tree-select/index.wxss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/wxs/array.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/wxs/bem.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/wxs/memoize.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/wxs/object.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/miniprogram_npm/vant-weapp/wxs/utils.wxs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/miniprogram/sitemap.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.js" afterPath="$PROJECT_DIR$/miniprogram/app.js" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" afterPath="$PROJECT_DIR$/miniprogram/app.json" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -124,8 +455,8 @@
           <file leaf-file-name="addTodo.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/addTodo/addTodo.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="438">
-                  <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+                <state relative-caret-position="530">
+                  <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
                   <folding>
                     <element signature="e#488#770#0" expanded="false" />
                     <element signature="e#798#889#0" expanded="false" />
@@ -250,19 +581,6 @@
               <item name="wx-miniProgrom-bookList" type="b2602c69:ProjectViewProjectNode" />
               <item name="wx-miniProgrom-bookList" type="462c0819:PsiDirectoryNode" />
               <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wx-miniProgrom-bookList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wx-miniProgrom-bookList" type="462c0819:PsiDirectoryNode" />
-              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wx-miniProgrom-bookList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wx-miniProgrom-bookList" type="462c0819:PsiDirectoryNode" />
-              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="addTodo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -403,7 +721,7 @@
       <workItem from="1544756514974" duration="5534000" />
       <workItem from="1565590709559" duration="2194000" />
       <workItem from="1571627777495" duration="2677000" />
-      <workItem from="1571637095406" duration="3874000" />
+      <workItem from="1571637095406" duration="4058000" />
     </task>
     <task id="LOCAL-00001" summary="Add: 购买页面">
       <created>1543399906403</created>
@@ -461,11 +779,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571627920674</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add: vanr-weapp">
+      <created>1571641274737</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571641274737</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18632000" />
+    <option name="totallyTimeSpent" value="18816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -513,7 +838,8 @@
     <MESSAGE value="Add: 支付" />
     <MESSAGE value="Add: 选择地址" />
     <MESSAGE value="Add: 商品详情页" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add: 商品详情页" />
+    <MESSAGE value="Add: vanr-weapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add: vanr-weapp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -673,6 +999,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,6 +1103,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -971,8 +1299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/miniprogram/pages/addTodo/addTodo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="530">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="e#488#770#0" expanded="false" />
             <element signature="e#798#889#0" expanded="false" />
