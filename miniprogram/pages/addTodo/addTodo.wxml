@@ -1,0 +1,13 @@
+<view class='container'>
+  <form bindsubmit="bindFormSubmit" bindreset="formReset" class='form-container'>
+    <view class="section">
+      <input placeholder="标题" name="name" type="text" bindinput="savePhone" />
+    </view>
+    <view class="section  code-container">
+      <textarea bindblur="changeDesc" auto-height placeholder="详细内容" />
+    </view>
+    <view class="btn-area">
+      <button form-type="submit">提交</button>
+    </view>
+  </form>
+</view>

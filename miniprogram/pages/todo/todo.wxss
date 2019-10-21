@@ -1,0 +1,91 @@
+page{
+  min-height: 100%;
+  position: relative;
+}
+page>.panel{
+  padding: 2%;
+  overflow: hidden;
+}
+.address-list{
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+  position: relative;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+}
+.use-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.set-default-one{
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.set-default-one button{
+  width: 60px;
+  height: 28px;
+  padding: 0;
+  text-align: center;
+  line-height: 28px;
+  font-size: 12px;
+}
+.inline-icon{
+  display: inline-block;
+}
+.address-list .info text{
+  display: inline-block;
+  padding: 0 8px;
+}
+.icon-xingming{
+  color: orangered;
+}
+.icon-dianhua{
+  color: #35fc96;
+}
+.icon-dizhi{
+  color: rgb(54, 83, 243);
+}
+.addBtn, .delBtn{
+  position: absolute;
+  bottom: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.addBtn .iconfont{
+  font-size: 22px;
+}
+.addBtn{
+  left: 3px;
+  background-color: orange;
+}
+.delBtn{
+  left: 46px;
+  background-color: rgb(250, 26, 26);
+}
+.delBtn .iconfont{
+  font-size: 20px;
+}
+.del-one-section{
+  position: absolute;
+  top: -12px;
+  right: -4px;
+}
+.to-add{
+  display: inline-block
+}
+.opt-line .iconfont{
+  padding-right: 4px;
+  line-height: 16px;
+}
+.icon-shanchu{
+  font-size: 22px;
+  vertical-align: bottom;
+}

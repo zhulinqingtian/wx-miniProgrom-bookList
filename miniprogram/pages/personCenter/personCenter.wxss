@@ -1,0 +1,23 @@
+page{
+  min-height: 100%;
+  position: relative;
+}
+page>.panel{
+  padding: 2%;
+  overflow: hidden;
+}
+.top-category{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top-category .top-item{
+  width: 20%;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: burlywood;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 60px;
+  text-align: center;
+}

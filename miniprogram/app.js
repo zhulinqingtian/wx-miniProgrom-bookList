@@ -607,6 +607,32 @@ App({
         address_details: '西溪联合科技广场',
         isDefault: false
       }
+    ],
+    todoList: [
+      {
+        id: 1,
+        title: 'XXX活动',
+        exeTime: '2019-10-04',
+        isDone: 1
+      },
+      {
+        id: 2,
+        title: '***活动',
+        exeTime: '2019-11-24',
+        isDone: 0
+      },
+      {
+        id: 3,
+        title: '吃饭',
+        exeTime: '2019-10-12',
+        isDone: 1
+      },
+      {
+        id: 4,
+        title: '睡觉',
+        exeTime: '2019-10-01',
+        isDone: 0
+      }
     ]
   },
   onLaunch: function () {
