@@ -1,1 +1,7 @@
-{}
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "user-info": "/components/userInfo/userInfo"
+  }
+}

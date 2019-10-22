@@ -50,7 +50,7 @@
 
   <!-- 添加待办事项 -->
   <view class='addBtn'>
-    <navigator url="../addAddress/addAddress" open-type="navigate" class="uploader-text">
+    <navigator url="../addTodo/addTodo" open-type="navigate" class="uploader-text">
       <view class='iconfont icon-jiahao'></view>
     </navigator>
   </view>

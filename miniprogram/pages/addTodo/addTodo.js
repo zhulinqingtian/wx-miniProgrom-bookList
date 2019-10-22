@@ -12,8 +12,6 @@ Page({
 
   },
   onLoad(options) {
-    this.getTodoList();
-
     // 从edit页面跳转过来
     if (options.editIds) {
       this.setData({ editIds: options.editIds });
