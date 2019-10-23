@@ -86,3 +86,6 @@ wx.reLaunch({
 注意： 选择base64, ttf
 [iconfont图标转化成base64存储的转化地址](https://transfonter.org/)
 ---
+
+2.引入vant-weapp
+npm i vant-weapp -S --production

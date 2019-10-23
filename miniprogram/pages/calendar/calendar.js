@@ -1,6 +1,6 @@
 // components/calendar/calendar.js
 
-var calendarUtil = require('../../public/js/calendarUtil');
+var calendarUtil = require('../../utils/calendarUtil');
 
 Component({
   /**

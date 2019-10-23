@@ -27,12 +27,18 @@
 
         <!-- 状态 -->
         <view class='set-default-one'>
-          <button 
-            type="default"
+          <button wx:if="{{item.isDone}}"
+            type="primary"
             size="mini"
             data-id="{{item.id}}"
             data-isDefault="{{item.isDone}}"
-            >{{item.isDone ? '已完成' : '未完成'}}</button>
+            >已完成</button>
+          <button wx:else
+                  type="warnning"
+                  size="mini"
+                  data-id="{{item.id}}"
+                  data-isDefault="{{item.isDone}}"
+          >未完成</button>
         </view>
 
         <!-- 待办信息 -->

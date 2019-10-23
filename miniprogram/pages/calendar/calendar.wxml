@@ -2,9 +2,9 @@
       bindtouchstart="touchS"
       bindtouchend="touchE">
     <view class='tit'>
-        <van-icon name="arrow-left" class='pre' bindtap='getPreMonthShow'/>
+        <view class='pre' bindtap='getPreMonthShow'> 上 </view>
         <view class='current current-date-label'>{{currentYear}}-{{currentMonth}}</view>
-        <van-icon name="arrow" class='next' bindtap='gotoNextMonthShow'/>
+        <view class='next' bindtap='gotoNextMonthShow'> 下 </view>
     </view>
     <view class='w100P showData'>
         <view>日</view>
