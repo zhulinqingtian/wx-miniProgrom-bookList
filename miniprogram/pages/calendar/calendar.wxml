@@ -1,0 +1,39 @@
+<view class="calendar"
+      bindtouchstart="touchS"
+      bindtouchend="touchE">
+    <view class='tit'>
+        <view class='pre' bindtap='getPreMonthShow'> 上 </view>
+        <view class='current current-date-label'>{{currentYear}}-{{currentMonth}}</view>
+        <view class='next' bindtap='gotoNextMonthShow'> 下 </view>
+    </view>
+    <view class='w100P showData'>
+        <view>日</view>
+        <view>一</view>
+        <view>二</view>
+        <view>三</view>
+        <view>四</view>
+        <view>五</view>
+        <view>六</view>
+    </view>
+
+    <view class='content'>
+        <view
+            wx:for="{{allDate}}" wx:key="{{index}}" wx:for-item="item"
+            class="calendar-item {{currentDateStr == item.dateStream ? 'current-date-checked-item' : ''}}"
+            data-current="{{item.month == 'current' ? '1' : '0'}}"
+            data-day='{{item.dateStream}}'
+        >
+            <view
+            >
+                <p>{{item.date}}</p>
+                <view wx:if="{{item.activitys && item.activitys.length > 0}}">
+                    <block wx:for="{{item.activitys}}" wx:key="index" wx:for-item="activity">
+                        <p class="{{item.month == 'current' ? '' : 'gray' }}">
+                            <span class="{{activity.isDone == 1 ? 'warnning' : 'red-tip'}}">{{activity.title || '无标题'}}</span>
+                        </p>
+                    </block>
+                </view>
+            </view>
+        </view >
+    </view>
+</view>

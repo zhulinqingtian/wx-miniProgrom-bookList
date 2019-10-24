@@ -1,0 +1,75 @@
+<view class='panel'>
+
+  <!-- 日历插件 -->
+  <calendar
+      currentYear='{{currentYear}}'
+      currentMonth="{{currentMonth}}"
+      currentDay="{{currentDay}}"
+      currentDateStr="{{currentDateStr}}"
+  ></calendar>
+
+  <!-- 没有待办 -->
+  <view class='address-list' wx:if="{{!todoData.length}}">暂无待办，现在
+    <navigator url="/pages/addAddress/addAddress" open-type="navigate" class="uploader-text to-add blue">
+      <view>添加</view>
+    </navigator>
+  </view>
+
+  <!-- 我的待办列表 -->
+    <block wx:for="{{todoData}}"
+           wx:for-item="item"
+           wx:for-index="{{index}}"
+           wx:key="{{item.id}}"
+    >
+      <view class='address-list' 
+        style="background-color: {{item.isDefault ? '#3596fc' : '#f0f0f0'}}; color: {{item.isDefault ? '#fff' : '#000'}}"  
+        >
+
+        <!-- 状态 -->
+        <view class='set-default-one'>
+          <button wx:if="{{item.isDone}}"
+            type="primary"
+            size="mini"
+            data-id="{{item.id}}"
+            data-isDefault="{{item.isDone}}"
+            >已完成</button>
+          <button wx:else
+                  type="warnning"
+                  size="mini"
+                  data-id="{{item.id}}"
+                  data-isDefault="{{item.isDone}}"
+          >未完成</button>
+        </view>
+
+        <!-- 待办信息 -->
+        <view class='info'>
+          <view class='iconfont icon-xingming inline-icon'></view>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='info'>
+          <view class='iconfont icon-dizhi inline-icon'></view>
+          <text>{{item.exeTime}}</text>
+        </view>
+
+      </view>
+    </block>
+
+  <!-- 添加待办事项 -->
+  <view class='addBtn'>
+    <navigator url="../addTodo/addTodo" open-type="navigate" class="uploader-text">
+      <view class='iconfont icon-jiahao'></view>
+    </navigator>
+  </view>
+
+  <!-- 编辑待办事项 -->
+  <view class='delBtn' bindtap='manageList'>
+    <view class='iconfont icon-yingyongguanli'></view>
+  </view>
+
+  <!-- 返回首页 -->
+  <view>
+    <navigator url="../index/index" open-type="switchTab" class="uploader-text">
+      <button type='primary'>返回首页</button>
+    </navigator>
+  </view>
+</view>

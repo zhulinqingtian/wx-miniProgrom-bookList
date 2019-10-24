@@ -1,4 +1,4 @@
-@import "./public/css/iconfont-base64.wxss";
+@import "css/iconfont-base64.wxss";
 
 /**app.wxss**/
 .container {

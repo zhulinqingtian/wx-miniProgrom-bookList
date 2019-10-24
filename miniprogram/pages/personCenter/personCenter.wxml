@@ -1,0 +1,30 @@
+<view class='panel'>
+  <!-- 个人信息 -->
+  <!-- 用户信息开始 -->
+  <user-info userInfo='{{userInfo}}'></user-info>
+  <!-- 用户信息结束 -->
+
+  <!-- 我的待办 -->
+  <view class="top-category">
+    <view class="top-item">
+      <navigator url="/pages/todo/todo" open-type="navigate">
+        <view>我的待办</view>
+      </navigator>
+    </view>
+    <view class="top-item">
+      <navigator url="/pages/todo/todo" open-type="navigate">
+        <view>我的待办</view>
+      </navigator>
+    </view>
+    <view class="top-item">
+      <navigator url="/pages/todo/todo" open-type="navigate">
+        <view>我的待办</view>
+      </navigator>
+    </view>
+    <view class="top-item">
+      <navigator url="/pages/todo/todo" open-type="navigate">
+        <view>我的待办</view>
+      </navigator>
+    </view>
+  </view>
+</view>

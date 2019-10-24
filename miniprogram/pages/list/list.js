@@ -1,4 +1,4 @@
-const Utils = require('../../public/js/util');
+const Utils = require('../../utils/util');
 
 var app = getApp();
 

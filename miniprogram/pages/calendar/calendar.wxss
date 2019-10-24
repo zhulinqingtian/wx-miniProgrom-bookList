@@ -1,0 +1,87 @@
+.calendar{
+    width: 100%;
+    background:#fff;
+}
+.pre,.next{
+    display: inline-block;
+}
+.showData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 25rpx;
+    padding-right:25rpx;
+}
+.showData view{
+    width: 14%;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 30rpx;
+    color: #2A2A2A;
+    /* background: rgb(224, 199, 199); */
+}
+.calendar .tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40rpx 0;
+
+}
+.calendar .tit .current{
+    margin: 0 40rpx;
+}
+.calendar .content{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 25rpx;
+    padding-right:25rpx;
+}
+.calendar .content .calendar-item{
+    width: 14%;
+    min-height: 20rpx;
+    line-height: 20rpx;
+    flex-shrink: 0;
+    font-size: 26rpx;
+    color: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rpx 0rpx;
+    border-right: 1rpx solid #d8d8d8;
+    border-bottom: 1rpx solid #d8d8d8;
+    /* background: rgb(224, 199, 199); */
+}
+.calendar .content .calendar-item:nth-child(7n){
+    border-right-width: 0rpx;
+}
+.calendar .content .calendar-item p{
+    display: block;
+    line-height: 36rpx;
+    font-size: 20rpx;
+    margin-bottom: 10rpx;
+}
+.calendar .content .calendar-item p span{
+    padding: 2rpx 2rpx;
+    border-radius: 6rpx;
+    color: #fff;
+    word-break: break-all;
+}
+
+.calendar .content .gray{
+    color: #999;
+}
+
+.calendar .content .current-date-checked-item{
+    color: #00C0FF;
+}
+span.warnning{
+    background-color: orange;
+}
+span.red-tip{
+    background-color: #f53d3d;
+}
